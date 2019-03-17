@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jpan.ink/"/>
-  <updated>2018-03-22T10:16:41.487Z</updated>
+  <updated>2019-03-17T11:19:10.773Z</updated>
   <id>https://www.jpan.ink/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>五种RabbitMQ队列</title>
+    <link href="https://www.jpan.ink/2019/03/17/%E4%BA%94%E7%A7%8DRabbitMQ%E9%98%9F%E5%88%97/"/>
+    <id>https://www.jpan.ink/2019/03/17/五种RabbitMQ队列/</id>
+    <published>2019-03-16T16:00:00.000Z</published>
+    <updated>2019-03-17T11:19:10.773Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="MQ"><a href="#MQ" class="headerlink" title="MQ"></a>MQ</h3><p>Message Queue<br>AMQP基础 Advanced Message Queuing Protocol<br>产品: ActiveMQ(Apache), Kafka<br><a id="more"></a></p><h3 id="RabbitMQ"><a href="#RabbitMQ" class="headerlink" title="RabbitMQ"></a>RabbitMQ</h3><p>解耦<br>异步</p><p>用Erlang开发  面向并发<br>支持 Java，Python, Ruby, NET, PHP, C/C++, node.js</p><h4 id="管理平台"><a href="#管理平台" class="headerlink" title="管理平台"></a>管理平台</h4><p>rabbitmq-plugins enable rabbitmq_management</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;MQ&quot;&gt;&lt;a href=&quot;#MQ&quot; class=&quot;headerlink&quot; title=&quot;MQ&quot;&gt;&lt;/a&gt;MQ&lt;/h3&gt;&lt;p&gt;Message Queue&lt;br&gt;AMQP基础 Advanced Message Queuing Protocol&lt;br&gt;产品: ActiveMQ(Apache), Kafka&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="RabbitMQ" scheme="https://www.jpan.ink/tags/RabbitMQ/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -90,18 +110,66 @@
     <link href="https://www.jpan.ink/2018/03/25/My-First-Paper/"/>
     <id>https://www.jpan.ink/2018/03/25/My-First-Paper/</id>
     <published>2018-03-25T09:13:33.000Z</published>
-    <updated>2019-03-15T16:46:02.320Z</updated>
+    <updated>2019-03-17T11:20:56.708Z</updated>
     
-    <content type="html"><![CDATA[<p>front-matter<br>description: 摘要<br><a id="more"></a></p><p>Welcome to <a href="http://www.jpan.ink">jpan</a>!</p><p><img src="https://i.imgur.com/tiJmhCw.jpg" alt=""></p><p>2018年1月3日开始动手做博客</p><p>2018年3月20日博客有了背景 接着有了自己的链接</p><p>2018年4月25日发布第一篇博文</p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://www.jpan.ink">jpan</a>!</p><p><img src="https://i.imgur.com/tiJmhCw.jpg" alt=""></p><p>2018年1月3日开始动手做博客</p><p>2018年3月20日博客有了背景 接着有了自己的链接</p><p>2018年4月25日发布第一篇博文</p><figure class="highlight plain"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;front-matter&lt;br&gt;description: 摘要&lt;br&gt;
+      记录
     
     </summary>
     
     
       <category term="记录" scheme="https://www.jpan.ink/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP基础语法</title>
+    <link href="https://www.jpan.ink/2016/06/20/PHP%E5%9F%BA%E7%A1%80/"/>
+    <id>https://www.jpan.ink/2016/06/20/PHP基础/</id>
+    <published>2016-06-19T16:00:00.000Z</published>
+    <updated>2019-03-17T11:21:57.787Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="PHP-脚本"><a href="#PHP-脚本" class="headerlink" title="PHP 脚本"></a>PHP 脚本</h3><p>可放置于文档中的任何位置。<br>PHP 脚本以 &lt;?php 开头，以 ?&gt; 结尾：</p><pre><code>&lt;?php// 此处是 PHP 代码?&gt;</code></pre><p>PHP 文件的默认文件扩展名是 “.php”。</p><p>PHP 文件通常包含 HTML 标签以及一些 PHP 脚本代码。</p><h3 id="PHP-支持三种注释："><a href="#PHP-支持三种注释：" class="headerlink" title="PHP 支持三种注释："></a>PHP 支持三种注释：</h3><pre><code>// 这是单行注释# 这也是单行注释/*这是多行注释块多行*/</code></pre><h3 id="PHP-大小写敏感"><a href="#PHP-大小写敏感" class="headerlink" title="PHP 大小写敏感"></a>PHP 大小写敏感</h3><p>在 PHP 中，所有用户定义的函数、类和关键词（例如 if、else、echo 等等）都对大小写不敏感。</p><p>所有变量都对大小写敏感。</p><h3 id="PHP-变量规则："><a href="#PHP-变量规则：" class="headerlink" title="PHP 变量规则："></a>PHP 变量规则：</h3><p>变量以 $ 符号开头，其后是变量的名称<br>变量名称必须以字母或下划线开头<br>变量名称不能以数字开头<br>变量名称只能包含字母数字字符和下划线（A-z、0-9 以及 _）<br>变量名称对大小写敏感（$y 与 $Y 是两个不同的变量）</p><h3 id="PHP-有三种不同的变量作用域："><a href="#PHP-有三种不同的变量作用域：" class="headerlink" title="PHP 有三种不同的变量作用域："></a>PHP 有三种不同的变量作用域：</h3><p>local（局部）<br>global（全局）<br>static（静态）<br>函数之外声明的变量拥有 Global 作用域，只能在函数以外进行访问。</p><p>函数内部声明的变量拥有 LOCAL 作用域，只能在函数内部进行访问。 通常，当函数完成/执行后，会删除所有变量。</p><h3 id="PHP-global-关键词"><a href="#PHP-global-关键词" class="headerlink" title="PHP global 关键词"></a>PHP global 关键词</h3><p>global 关键词用于在函数内 访问全局变量。<br>要做到这一点，请在（函数内部）变量前面使用 global 关键词：<br>global $x,$y;<br> $GLOBALS[‘y’]=$GLOBALS[‘x’]+$GLOBALS[‘y’];</p><h3 id="PHP-static-关键词"><a href="#PHP-static-关键词" class="headerlink" title="PHP static 关键词"></a>PHP static 关键词</h3><p>首次声明变量时使用 static 关键词，不删除某个局部变量。<br>每当函数被调用时，这个变量所存储的信息都是函数最后一次被调用时所包含的信息。</p><p>注释：该变量仍然是函数的局部变量。</p><h3 id="PHP-echo-和-print-语句"><a href="#PHP-echo-和-print-语句" class="headerlink" title="PHP echo 和 print 语句"></a>PHP echo 和 print 语句</h3><p>echo 和 print 之间的差异：</p><p>echo - 能够输出一个以上的字符串<br>print - 只能输出一个字符串，并始终返回 1</p><p>提示：echo 比 print 稍快，因为它不返回任何值。</p><p>使用方法一致。<br>都是语言结构，有无括号均可使用， 字符串中能包含 HTML 标记</p><pre><code>&lt;?phpecho &quot;&lt;h2&gt;PHP is fun!&lt;/h2&gt;&quot;;echo &quot;Hello world!&lt;br&gt;&quot;;echo &quot;I&apos;m about to learn PHP!&lt;br&gt;&quot;;echo &quot;This&quot;, &quot; string&quot;, &quot; was&quot;, &quot; made&quot;, &quot; with multiple parameters.&quot;;echo $txt1;echo &quot;&lt;br&gt;&quot;;echo &quot;Study PHP at $txt2&quot;;echo &quot;&lt;br&gt;&quot;;echo &quot;My car is a {$cars[0]}&quot;;?&gt;</code></pre><h3 id="PHP-字符串"><a href="#PHP-字符串" class="headerlink" title="PHP 字符串"></a>PHP 字符串</h3><p>字符串可以是引号内的任何文本。可以使用单引号或双引</p><h3 id="PHP-逻辑"><a href="#PHP-逻辑" class="headerlink" title="PHP 逻辑"></a>PHP 逻辑</h3><p>逻辑是 true 或 false。</p><pre><code>$x=true;$y=false;</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;PHP-脚本&quot;&gt;&lt;a href=&quot;#PHP-脚本&quot; class=&quot;headerlink&quot; title=&quot;PHP 脚本&quot;&gt;&lt;/a&gt;PHP 脚本&lt;/h3&gt;&lt;p&gt;可放置于文档中的任何位置。&lt;br&gt;PHP 脚本以 &amp;lt;?php 开头，以 ?&amp;gt; 结尾：&lt;/p&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="PHP" scheme="https://www.jpan.ink/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jquery传递多值</title>
+    <link href="https://www.jpan.ink/2016/05/11/jq%E5%87%BD%E6%95%B0%E4%BC%A0%E9%80%81%E6%95%B0%E6%8D%AE/"/>
+    <id>https://www.jpan.ink/2016/05/11/jq函数传送数据/</id>
+    <published>2016-05-10T16:00:00.000Z</published>
+    <updated>2019-03-15T17:24:03.709Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>(&apos;+ a +&apos;,\&apos;&apos;+ b +&apos;\&apos;)</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre&gt;&lt;code&gt;(&amp;apos;+ a +&amp;apos;,\&amp;apos;&amp;apos;+ b +&amp;apos;\&amp;apos;)
+&lt;/code&gt;&lt;/pre&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="网页" scheme="https://www.jpan.ink/tags/%E7%BD%91%E9%A1%B5/"/>
     
   </entry>
   
