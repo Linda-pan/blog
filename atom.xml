@@ -39,6 +39,33 @@
   </entry>
   
   <entry>
+    <title>排序算法</title>
+    <link href="https://www.jpan.ink/2018/11/20/Algorithm-sorting/"/>
+    <id>https://www.jpan.ink/2018/11/20/Algorithm-sorting/</id>
+    <published>2018-11-19T16:00:00.000Z</published>
+    <updated>2019-03-24T15:10:33.754Z</updated>
+    
+    <content type="html"><![CDATA[<p>###概念</p><p>时间复杂度 big 0<br>空间复杂度 </p><p>判断算法的好坏：<br>先看时间复杂度，在分析实际运行时间（常数项时间）<br>稳定的算法：<br>长期期望就是复杂度，和最长最短没关系，也不影响稳定性<br>稳定性:<br>排序中相同的值原始的相对次序不变</p><p>####对数器<br>绝对正确的方法a<br>随机样本产生器<br>比对多次</p><p>###算法<br><img src="/2018/11/20/Algorithm-sorting/1.png" alt=""></p><ul><li>快速排序 经典快速排序（取最后一个值）</li><li>递归排序 工程上快排不用递归 所有递归算法都可以改成非递归<br>递归函数的代价很大 常数时间很大（系统压栈）<br>系统栈 多层后会报错 不安全</li><li>堆排序<br>完全二叉树（满二叉树 或者 依次补齐） 左孩子2i+1 右孩子 2i+2 0的父节点是0 完全二叉树 = 堆 = 数组结构<br>大根堆 = 任何树的最大值是头部  小根堆<br>建立大根堆 o（n）  heapInsert heapify<br>堆也适用 heap，treeSet 红黑树</li></ul><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>工程上使用排序</p><ul><li>基础类型 快速排序  </li><li>对象类型 归并排序</li><li>稳定性 很短的数组（长度小于60） 插入排序（常数项很低）</li></ul><p>T(N) = a<em>T(N/b) + O(N^d)<br>1) log(b,a) &gt; d -&gt; 复杂度为O(N^log(b,a))<br>2) log(b,a) = d -&gt; 复杂度为O(N^d </em> logN)<br>3) log(b,a) &lt; d -&gt; 复杂度为O(N^d)  </p><p>Arrays.sort()<br>如果没有定义 基础类型按照值从小到大排序 对象内存地址排序<br>Arrays.sort(list，new SpecialComparator)；</p><p>new PriortyQueue&lt;&gt;(new SpecialComparator());</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;###概念&lt;/p&gt;
+&lt;p&gt;时间复杂度 big 0&lt;br&gt;空间复杂度 &lt;/p&gt;
+&lt;p&gt;判断算法的好坏：&lt;br&gt;先看时间复杂度，在分析实际运行时间（常数项时间）&lt;br&gt;稳定的算法：&lt;br&gt;长期期望就是复杂度，和最长最短没关系，也不影响稳定性&lt;br&gt;稳定性:&lt;br&gt;排序中相同的值
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://www.jpan.ink/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://www.jpan.ink/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JVM原理</title>
     <link href="https://www.jpan.ink/2018/10/29/Java-jvm/"/>
     <id>https://www.jpan.ink/2018/10/29/Java-jvm/</id>
@@ -61,29 +88,29 @@
   </entry>
   
   <entry>
-    <title>json与list的转换</title>
-    <link href="https://www.jpan.ink/2018/03/29/Json-convert-to-list/"/>
-    <id>https://www.jpan.ink/2018/03/29/Json-convert-to-list/</id>
+    <title>equal</title>
+    <link href="https://www.jpan.ink/2018/03/29/Java-equal/"/>
+    <id>https://www.jpan.ink/2018/03/29/Java-equal/</id>
     <published>2018-03-29T02:28:40.000Z</published>
-    <updated>2019-03-17T14:32:01.149Z</updated>
+    <updated>2019-03-24T14:55:33.257Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="当不通过form-data进行传送数据时"><a href="#当不通过form-data进行传送数据时" class="headerlink" title="当不通过form-data进行传送数据时"></a>当不通过form-data进行传送数据时</h3><h4 id="无法直接传json的list-可以通过转换为String传送"><a href="#无法直接传json的list-可以通过转换为String传送" class="headerlink" title="无法直接传json的list 可以通过转换为String传送"></a>无法直接传json的list 可以通过转换为String传送</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">contentStr = <span class="built_in">JSON</span>.stringify(list),</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object content = JSONArray.parseArray(contentStr, Object.class)</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="和-equal"><a href="#和-equal" class="headerlink" title="== 和 equal"></a>== 和 equal</h3><ul><li>== 对比基本数据类型的值和引用对象的内存地址</li><li>equal 判断两个对象是否相等，需要重写equals()方法，否则是判断两个对象是否指向一个对象。</li></ul><h3 id="equal"><a href="#equal" class="headerlink" title="equal"></a>equal</h3><p>Object的equal方法，定义原型如下：</p><pre><code>public boolean equals (Object x){    return this == x;}</code></pre><h3 id="相等与同一"><a href="#相等与同一" class="headerlink" title="相等与同一"></a>相等与同一</h3><p>如果两个对象具有相同的类型以及相同的属性值，则称这两个对象相等。<br>如果两个引用对象指的是同一个对像，则称这两个变量同一。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h3 id=&quot;当不通过form-data进行传送数据时&quot;&gt;&lt;a href=&quot;#当不通过form-data进行传送数据时&quot; class=&quot;headerlink&quot; title=&quot;当不通过form-data进行传送数据时&quot;&gt;&lt;/a&gt;当不通过form-data进行传送数据时&lt;/h3&gt;&lt;
+        &lt;h3 id=&quot;和-equal&quot;&gt;&lt;a href=&quot;#和-equal&quot; class=&quot;headerlink&quot; title=&quot;== 和 equal&quot;&gt;&lt;/a&gt;== 和 equal&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;== 对比基本数据类型的值和引用对象的内存地址&lt;/li&gt;
+&lt;li&gt;equal
       
     
     </summary>
     
-      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
-    
-      <category term="Json" scheme="https://www.jpan.ink/categories/Json/"/>
+      <category term="Java" scheme="https://www.jpan.ink/categories/Java/"/>
     
     
-      <category term="Web" scheme="https://www.jpan.ink/tags/Web/"/>
+      <category term="Java" scheme="https://www.jpan.ink/tags/Java/"/>
     
   </entry>
   
@@ -163,6 +190,33 @@
   </entry>
   
   <entry>
+    <title>json与list的转换</title>
+    <link href="https://www.jpan.ink/2017/03/29/Json-convert-to-list/"/>
+    <id>https://www.jpan.ink/2017/03/29/Json-convert-to-list/</id>
+    <published>2017-03-29T02:28:40.000Z</published>
+    <updated>2019-03-24T14:47:57.987Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="当不通过form-data进行传送数据时"><a href="#当不通过form-data进行传送数据时" class="headerlink" title="当不通过form-data进行传送数据时"></a>当不通过form-data进行传送数据时</h3><h4 id="无法直接传json的list-可以通过转换为String传送"><a href="#无法直接传json的list-可以通过转换为String传送" class="headerlink" title="无法直接传json的list 可以通过转换为String传送"></a>无法直接传json的list 可以通过转换为String传送</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">contentStr = <span class="built_in">JSON</span>.stringify(list),</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object content = JSONArray.parseArray(contentStr, Object.class)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;当不通过form-data进行传送数据时&quot;&gt;&lt;a href=&quot;#当不通过form-data进行传送数据时&quot; class=&quot;headerlink&quot; title=&quot;当不通过form-data进行传送数据时&quot;&gt;&lt;/a&gt;当不通过form-data进行传送数据时&lt;/h3&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
+    
+      <category term="Json" scheme="https://www.jpan.ink/categories/Json/"/>
+    
+    
+      <category term="Web" scheme="https://www.jpan.ink/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CleanCode-note</title>
     <link href="https://www.jpan.ink/2017/03/14/CleanCode-note/"/>
     <id>https://www.jpan.ink/2017/03/14/CleanCode-note/</id>
@@ -181,32 +235,6 @@
     
     
       <category term="Notes" scheme="https://www.jpan.ink/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在Python2.7中和编码作战</title>
-    <link href="https://www.jpan.ink/2017/02/06/Python-code/"/>
-    <id>https://www.jpan.ink/2017/02/06/Python-code/</id>
-    <published>2017-02-05T16:00:00.000Z</published>
-    <updated>2019-03-17T15:33:29.741Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="字符编码详解"><a href="#字符编码详解" class="headerlink" title="字符编码详解"></a>字符编码详解</h4><ul><li>ASCII(American Standard Code for Information Interchange)，是一种单字节的编码。</li><li>发展为MBCS(Multi-Byte Character Set)，也叫做DBCS(Double-Byte Character Set)。根据你设定的区域不同，MBCS指代不同的编码，而Linux里无法使用MBCS作为编码。在Windows中又叫ANSI。同时，在简体中文Windows默认的区域设定里，指代GBK。</li><li>后来所有语言的字符都用同一种字符集来表示，这就是Unicode。统一两字节。</li><li>美国人创造了UTF-8，他是变长的，并且兼容ASCII，ASCII字符使用1字节表示。UTF-8里中文字符使用3个字节。</li></ul><h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><h5 id="str其实是字节串，unicode才是字符串。"><a href="#str其实是字节串，unicode才是字符串。" class="headerlink" title="str其实是字节串，unicode才是字符串。"></a>str其实是字节串，unicode才是字符串。</h5><p>对UTF-8编码的str’汉’使用len()函数时，结果是3，UTF-8编码的’汉’ == ‘\xE6\xB1\x89’。<br>len(u’汉’) == 1<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding: UTF-8</span></span><br><span class="line"> </span><br><span class="line">u = <span class="string">u'汉'</span></span><br><span class="line"><span class="keyword">print</span> repr(u) <span class="comment"># u'\u6c49'</span></span><br><span class="line">s = u.encode(<span class="string">'UTF-8'</span>)</span><br><span class="line"><span class="keyword">print</span> repr(s) <span class="comment"># '\xe6\xb1\x89'</span></span><br><span class="line">u2 = s.decode(<span class="string">'UTF-8'</span>)</span><br><span class="line"><span class="keyword">print</span> repr(u2) <span class="comment"># u'\u6c49'</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 对unicode进行解码是错误的</span></span><br><span class="line"><span class="comment"># s2 = u.decode('UTF-8')</span></span><br><span class="line"><span class="comment"># 同样，对str进行编码也是错误的</span></span><br><span class="line"><span class="comment"># u2 = s.encode('UTF-8')</span></span><br></pre></td></tr></table></figure></p><h5 id="读写"><a href="#读写" class="headerlink" title="读写"></a>读写</h5><p>内置的open()方法打开文件时，read()读取的是str，读取后需要使用正确的编码格式进行decode()。write()写入时，如果参数是unicode，则需要使用你希望写入的编码进行encode()，如果是其他编码格式的str，则需要先用该str的编码进行decode()，转成unicode后再使用写入的编码进行encode()</p><h5 id="sys-locale模块中提供了一些获取当前环境下的默认编码的方法。"><a href="#sys-locale模块中提供了一些获取当前环境下的默认编码的方法。" class="headerlink" title="sys/locale模块中提供了一些获取当前环境下的默认编码的方法。"></a>sys/locale模块中提供了一些获取当前环境下的默认编码的方法。</h5> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line">import locale</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 返回当前系统所使用的默认字符编码</span></span><br><span class="line">p(sys.getdefaultencoding)</span><br><span class="line"> </span><br><span class="line"><span class="meta">#</span><span class="bash"> 返回用于转换Unicode文件名至系统文件名所使用的编码</span></span><br><span class="line">p(sys.getfilesystemencoding)</span><br><span class="line"> </span><br><span class="line"><span class="meta">#</span><span class="bash"> 获取默认的区域设置并返回元祖(语言, 编码)</span></span><br><span class="line">p(locale.getdefaultlocale)</span><br><span class="line"> </span><br><span class="line"><span class="meta">#</span><span class="bash"> 返回用户设定的文本数据编码</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 文档提到this <span class="keyword">function</span> only returns a guess</span></span><br><span class="line">p(locale.getpreferredencoding)</span><br></pre></td></tr></table></figure><h5 id="other"><a href="#other" class="headerlink" title="other"></a>other</h5><ul><li><p>抛弃str，全部使用unicode。</p></li><li><p>使用codecs.open()替代内置的open()</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;字符编码详解&quot;&gt;&lt;a href=&quot;#字符编码详解&quot; class=&quot;headerlink&quot; title=&quot;字符编码详解&quot;&gt;&lt;/a&gt;字符编码详解&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;ASCII(American Standard Code for Information Int
-      
-    
-    </summary>
-    
-      <category term="Python" scheme="https://www.jpan.ink/categories/Python/"/>
-    
-    
-      <category term="Python" scheme="https://www.jpan.ink/tags/Python/"/>
     
   </entry>
   
@@ -230,6 +258,32 @@
     </summary>
     
       <category term="Pickle" scheme="https://www.jpan.ink/categories/Pickle/"/>
+    
+    
+      <category term="Python" scheme="https://www.jpan.ink/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Python2.7中和编码作战</title>
+    <link href="https://www.jpan.ink/2017/02/06/Python-code/"/>
+    <id>https://www.jpan.ink/2017/02/06/Python-code/</id>
+    <published>2017-02-05T16:00:00.000Z</published>
+    <updated>2019-03-17T15:33:29.741Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="字符编码详解"><a href="#字符编码详解" class="headerlink" title="字符编码详解"></a>字符编码详解</h4><ul><li>ASCII(American Standard Code for Information Interchange)，是一种单字节的编码。</li><li>发展为MBCS(Multi-Byte Character Set)，也叫做DBCS(Double-Byte Character Set)。根据你设定的区域不同，MBCS指代不同的编码，而Linux里无法使用MBCS作为编码。在Windows中又叫ANSI。同时，在简体中文Windows默认的区域设定里，指代GBK。</li><li>后来所有语言的字符都用同一种字符集来表示，这就是Unicode。统一两字节。</li><li>美国人创造了UTF-8，他是变长的，并且兼容ASCII，ASCII字符使用1字节表示。UTF-8里中文字符使用3个字节。</li></ul><h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><h5 id="str其实是字节串，unicode才是字符串。"><a href="#str其实是字节串，unicode才是字符串。" class="headerlink" title="str其实是字节串，unicode才是字符串。"></a>str其实是字节串，unicode才是字符串。</h5><p>对UTF-8编码的str’汉’使用len()函数时，结果是3，UTF-8编码的’汉’ == ‘\xE6\xB1\x89’。<br>len(u’汉’) == 1<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding: UTF-8</span></span><br><span class="line"> </span><br><span class="line">u = <span class="string">u'汉'</span></span><br><span class="line"><span class="keyword">print</span> repr(u) <span class="comment"># u'\u6c49'</span></span><br><span class="line">s = u.encode(<span class="string">'UTF-8'</span>)</span><br><span class="line"><span class="keyword">print</span> repr(s) <span class="comment"># '\xe6\xb1\x89'</span></span><br><span class="line">u2 = s.decode(<span class="string">'UTF-8'</span>)</span><br><span class="line"><span class="keyword">print</span> repr(u2) <span class="comment"># u'\u6c49'</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 对unicode进行解码是错误的</span></span><br><span class="line"><span class="comment"># s2 = u.decode('UTF-8')</span></span><br><span class="line"><span class="comment"># 同样，对str进行编码也是错误的</span></span><br><span class="line"><span class="comment"># u2 = s.encode('UTF-8')</span></span><br></pre></td></tr></table></figure></p><h5 id="读写"><a href="#读写" class="headerlink" title="读写"></a>读写</h5><p>内置的open()方法打开文件时，read()读取的是str，读取后需要使用正确的编码格式进行decode()。write()写入时，如果参数是unicode，则需要使用你希望写入的编码进行encode()，如果是其他编码格式的str，则需要先用该str的编码进行decode()，转成unicode后再使用写入的编码进行encode()</p><h5 id="sys-locale模块中提供了一些获取当前环境下的默认编码的方法。"><a href="#sys-locale模块中提供了一些获取当前环境下的默认编码的方法。" class="headerlink" title="sys/locale模块中提供了一些获取当前环境下的默认编码的方法。"></a>sys/locale模块中提供了一些获取当前环境下的默认编码的方法。</h5> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line">import locale</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 返回当前系统所使用的默认字符编码</span></span><br><span class="line">p(sys.getdefaultencoding)</span><br><span class="line"> </span><br><span class="line"><span class="meta">#</span><span class="bash"> 返回用于转换Unicode文件名至系统文件名所使用的编码</span></span><br><span class="line">p(sys.getfilesystemencoding)</span><br><span class="line"> </span><br><span class="line"><span class="meta">#</span><span class="bash"> 获取默认的区域设置并返回元祖(语言, 编码)</span></span><br><span class="line">p(locale.getdefaultlocale)</span><br><span class="line"> </span><br><span class="line"><span class="meta">#</span><span class="bash"> 返回用户设定的文本数据编码</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 文档提到this <span class="keyword">function</span> only returns a guess</span></span><br><span class="line">p(locale.getpreferredencoding)</span><br></pre></td></tr></table></figure><h5 id="other"><a href="#other" class="headerlink" title="other"></a>other</h5><ul><li><p>抛弃str，全部使用unicode。</p></li><li><p>使用codecs.open()替代内置的open()</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;字符编码详解&quot;&gt;&lt;a href=&quot;#字符编码详解&quot; class=&quot;headerlink&quot; title=&quot;字符编码详解&quot;&gt;&lt;/a&gt;字符编码详解&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;ASCII(American Standard Code for Information Int
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://www.jpan.ink/categories/Python/"/>
     
     
       <category term="Python" scheme="https://www.jpan.ink/tags/Python/"/>
@@ -333,28 +387,6 @@
   </entry>
   
   <entry>
-    <title>Js基础语法</title>
-    <link href="https://www.jpan.ink/2016/04/22/Js-note/"/>
-    <id>https://www.jpan.ink/2016/04/22/Js-note/</id>
-    <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2019-03-17T14:28:18.496Z</updated>
-    
-    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>大小写区分</p></li><li><p>忽略空格</p></li><li><p>单引号和双引号作用一致</p></li><li><p>；可加可不加</p></li><li><p>var carname=”Volvo”; var carname;值不变</p></li><li><p>var cars = new Array（）；</p></li><li><p>cars[0]=“”</p></li><li><p>数组下标从0开始</p></li><li><p>对象定义与寻址</p></li><li><p>字符串对象（所有事务都是对象）</p></li><li><p>txt.length=5</p></li><li><p>txt.indexOf()</p></li><li><p>txt.replace()</p></li><li><p>txt.search()</p></li><li><p>alert（““） 弹窗提示</p></li><li><p>函数外申明的变量是全局变量，网页上所有脚本和函数都可以访问它。可以</p></li><li><p>输出</p></li><li><p>document.getElementById(“demo”).innerHTML=”My First JavaScript”;+ document.write(“</p><p>My First JavaScript</p>“); <p></p></li><li><p>字符串变量+ 表示连接</p></li></ul><ul><li><p>数字和字符串相加得到字符串</p></li><li><p>=== 全等</p></li><li><p>In</p></li><li><p>var person={fname:”John”,lname:”Doe”,age:25};</p></li><li></li><li>for (x in person)</li><li>{</li><li>txt=txt + person[x];</li><li>}</li></ul><p>Js验证<br><a href="http://www.w3school.com.cn/js/js_form_validation.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/js/js_form_validation.asp</a></p>]]></content>
-    
-    <summary type="html">
-    
-      notes
-    
-    </summary>
-    
-      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
-    
-    
-      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Jq基础语法</title>
     <link href="https://www.jpan.ink/2016/04/22/Jq-note/"/>
     <id>https://www.jpan.ink/2016/04/22/Jq-note/</id>
@@ -370,6 +402,28 @@
     </summary>
     
       <category term="Jq" scheme="https://www.jpan.ink/categories/Jq/"/>
+    
+    
+      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Js基础语法</title>
+    <link href="https://www.jpan.ink/2016/04/22/Js-note/"/>
+    <id>https://www.jpan.ink/2016/04/22/Js-note/</id>
+    <published>2016-04-21T16:00:00.000Z</published>
+    <updated>2019-03-17T14:28:18.496Z</updated>
+    
+    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>大小写区分</p></li><li><p>忽略空格</p></li><li><p>单引号和双引号作用一致</p></li><li><p>；可加可不加</p></li><li><p>var carname=”Volvo”; var carname;值不变</p></li><li><p>var cars = new Array（）；</p></li><li><p>cars[0]=“”</p></li><li><p>数组下标从0开始</p></li><li><p>对象定义与寻址</p></li><li><p>字符串对象（所有事务都是对象）</p></li><li><p>txt.length=5</p></li><li><p>txt.indexOf()</p></li><li><p>txt.replace()</p></li><li><p>txt.search()</p></li><li><p>alert（““） 弹窗提示</p></li><li><p>函数外申明的变量是全局变量，网页上所有脚本和函数都可以访问它。可以</p></li><li><p>输出</p></li><li><p>document.getElementById(“demo”).innerHTML=”My First JavaScript”;+ document.write(“</p><p>My First JavaScript</p>“); <p></p></li><li><p>字符串变量+ 表示连接</p></li></ul><ul><li><p>数字和字符串相加得到字符串</p></li><li><p>=== 全等</p></li><li><p>In</p></li><li><p>var person={fname:”John”,lname:”Doe”,age:25};</p></li><li></li><li>for (x in person)</li><li>{</li><li>txt=txt + person[x];</li><li>}</li></ul><p>Js验证<br><a href="http://www.w3school.com.cn/js/js_form_validation.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/js/js_form_validation.asp</a></p>]]></content>
+    
+    <summary type="html">
+    
+      notes
+    
+    </summary>
+    
+      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
     
     
       <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
