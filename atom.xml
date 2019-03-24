@@ -43,17 +43,16 @@
     <link href="https://www.jpan.ink/2018/11/20/Algorithm-sorting/"/>
     <id>https://www.jpan.ink/2018/11/20/Algorithm-sorting/</id>
     <published>2018-11-19T16:00:00.000Z</published>
-    <updated>2019-03-24T15:10:33.754Z</updated>
+    <updated>2019-03-24T15:14:48.410Z</updated>
     
-    <content type="html"><![CDATA[<p>###概念</p><p>时间复杂度 big 0<br>空间复杂度 </p><p>判断算法的好坏：<br>先看时间复杂度，在分析实际运行时间（常数项时间）<br>稳定的算法：<br>长期期望就是复杂度，和最长最短没关系，也不影响稳定性<br>稳定性:<br>排序中相同的值原始的相对次序不变</p><p>####对数器<br>绝对正确的方法a<br>随机样本产生器<br>比对多次</p><p>###算法<br><img src="/2018/11/20/Algorithm-sorting/1.png" alt=""></p><ul><li>快速排序 经典快速排序（取最后一个值）</li><li>递归排序 工程上快排不用递归 所有递归算法都可以改成非递归<br>递归函数的代价很大 常数时间很大（系统压栈）<br>系统栈 多层后会报错 不安全</li><li>堆排序<br>完全二叉树（满二叉树 或者 依次补齐） 左孩子2i+1 右孩子 2i+2 0的父节点是0 完全二叉树 = 堆 = 数组结构<br>大根堆 = 任何树的最大值是头部  小根堆<br>建立大根堆 o（n）  heapInsert heapify<br>堆也适用 heap，treeSet 红黑树</li></ul><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>工程上使用排序</p><ul><li>基础类型 快速排序  </li><li>对象类型 归并排序</li><li>稳定性 很短的数组（长度小于60） 插入排序（常数项很低）</li></ul><p>T(N) = a<em>T(N/b) + O(N^d)<br>1) log(b,a) &gt; d -&gt; 复杂度为O(N^log(b,a))<br>2) log(b,a) = d -&gt; 复杂度为O(N^d </em> logN)<br>3) log(b,a) &lt; d -&gt; 复杂度为O(N^d)  </p><p>Arrays.sort()<br>如果没有定义 基础类型按照值从小到大排序 对象内存地址排序<br>Arrays.sort(list，new SpecialComparator)；</p><p>new PriortyQueue&lt;&gt;(new SpecialComparator());</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>时间复杂度 big 0<br>空间复杂度 </p><p>判断算法的好坏：<br>先看时间复杂度，在分析实际运行时间（常数项时间）<br>稳定的算法：<br>长期期望就是复杂度，和最长最短没关系，也不影响稳定性<br>稳定性:<br>排序中相同的值原始的相对次序不变</p><h4 id="对数器"><a href="#对数器" class="headerlink" title="对数器"></a>对数器</h4><p>绝对正确的方法a<br>随机样本产生器<br>比对多次</p><h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><p><img src="/2018/11/20/Algorithm-sorting/1.png" alt=""></p><ul><li>快速排序 经典快速排序（取最后一个值）</li><li>递归排序 工程上快排不用递归 所有递归算法都可以改成非递归<br>递归函数的代价很大 常数时间很大（系统压栈）<br>系统栈 多层后会报错 不安全</li><li>堆排序<br>完全二叉树（满二叉树 或者 依次补齐） 左孩子2i+1 右孩子 2i+2 0的父节点是0 完全二叉树 = 堆 = 数组结构<br>大根堆 = 任何树的最大值是头部  小根堆<br>建立大根堆 o（n）  heapInsert heapify<br>堆也适用 heap，treeSet 红黑树</li></ul><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>工程上使用排序</p><ul><li>基础类型 快速排序  </li><li>对象类型 归并排序</li><li>稳定性 很短的数组（长度小于60） 插入排序（常数项很低）</li></ul><h3 id="master公式的使用："><a href="#master公式的使用：" class="headerlink" title="master公式的使用："></a>master公式的使用：</h3><p>T（N）= a*T(N/b) + O(n^d)</p><p>其中N为行为的总样本量，N/b为子行为的样本量，a为子行为发生的次数，除了调用子过程之外进行剩下的操作的所花费的时间代价。</p><pre><code>T(N) = a*T(N/b) + O(N^d)1) log(b,a) &gt; d -&gt; 复杂度为O(N^log(b,a))2) log(b,a) = d -&gt; 复杂度为O(N^d * logN)3) log(b,a) &lt; d -&gt; 复杂度为O(N^d)  </code></pre><h3 id="java自定义排序"><a href="#java自定义排序" class="headerlink" title="java自定义排序"></a>java自定义排序</h3><p>Arrays.sort()<br>如果没有定义 基础类型按照值从小到大排序 对象内存地址排序<br>Arrays.sort(list，new SpecialComparator)；</p><p>new PriortyQueue&lt;&gt;(new SpecialComparator());</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;###概念&lt;/p&gt;
-&lt;p&gt;时间复杂度 big 0&lt;br&gt;空间复杂度 &lt;/p&gt;
-&lt;p&gt;判断算法的好坏：&lt;br&gt;先看时间复杂度，在分析实际运行时间（常数项时间）&lt;br&gt;稳定的算法：&lt;br&gt;长期期望就是复杂度，和最长最短没关系，也不影响稳定性&lt;br&gt;稳定性:&lt;br&gt;排序中相同的值
+        &lt;h3 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h3&gt;&lt;p&gt;时间复杂度 big 0&lt;br&gt;空间复杂度 &lt;/p&gt;
+&lt;p&gt;判断算法的好坏：&lt;br&gt;先看时间复杂度，在分析实际运行时间（常数项时间）&lt;br&gt;稳
       
     
     </summary>
@@ -316,28 +315,6 @@
   </entry>
   
   <entry>
-    <title>PHP基础语法</title>
-    <link href="https://www.jpan.ink/2016/06/20/PHP-note/"/>
-    <id>https://www.jpan.ink/2016/06/20/PHP-note/</id>
-    <published>2016-06-19T16:00:00.000Z</published>
-    <updated>2019-03-17T15:35:05.881Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="PHP-脚本"><a href="#PHP-脚本" class="headerlink" title="PHP 脚本"></a>PHP 脚本</h4><p>可放置于文档中的任何位置。<br>PHP 脚本以 &lt;?php 开头，以 ?&gt; 结尾：<br><a id="more"></a></p><pre><code>&lt;?php// 此处是 PHP 代码?&gt;</code></pre><p>PHP 文件的默认文件扩展名是 “.php”。</p><p>PHP 文件通常包含 HTML 标签以及一些 PHP 脚本代码。</p><h4 id="PHP-支持三种注释："><a href="#PHP-支持三种注释：" class="headerlink" title="PHP 支持三种注释："></a>PHP 支持三种注释：</h4><pre><code>// 这是单行注释# 这也是单行注释/*这是多行注释块多行*/</code></pre><h4 id="PHP-大小写敏感"><a href="#PHP-大小写敏感" class="headerlink" title="PHP 大小写敏感"></a>PHP 大小写敏感</h4><p>在 PHP 中，所有用户定义的函数、类和关键词（例如 if、else、echo 等等）都对大小写不敏感。</p><p>所有变量都对大小写敏感。</p><h4 id="PHP-变量规则："><a href="#PHP-变量规则：" class="headerlink" title="PHP 变量规则："></a>PHP 变量规则：</h4><p>变量以 $ 符号开头，其后是变量的名称<br>变量名称必须以字母或下划线开头<br>变量名称不能以数字开头<br>变量名称只能包含字母数字字符和下划线（A-z、0-9 以及 _）<br>变量名称对大小写敏感（$y 与 $Y 是两个不同的变量）</p><h4 id="PHP-有三种不同的变量作用域："><a href="#PHP-有三种不同的变量作用域：" class="headerlink" title="PHP 有三种不同的变量作用域："></a>PHP 有三种不同的变量作用域：</h4><p>local（局部）<br>global（全局）<br>static（静态）<br>函数之外声明的变量拥有 Global 作用域，只能在函数以外进行访问。</p><p>函数内部声明的变量拥有 LOCAL 作用域，只能在函数内部进行访问。 通常，当函数完成/执行后，会删除所有变量。</p><h4 id="PHP-global-关键词"><a href="#PHP-global-关键词" class="headerlink" title="PHP global 关键词"></a>PHP global 关键词</h4><p>global 关键词用于在函数内 访问全局变量。<br>要做到这一点，请在（函数内部）变量前面使用 global 关键词：<br>global $x,$y;<br> $GLOBALS[‘y’]=$GLOBALS[‘x’]+$GLOBALS[‘y’];</p><h4 id="PHP-static-关键词"><a href="#PHP-static-关键词" class="headerlink" title="PHP static 关键词"></a>PHP static 关键词</h4><p>首次声明变量时使用 static 关键词，不删除某个局部变量。<br>每当函数被调用时，这个变量所存储的信息都是函数最后一次被调用时所包含的信息。</p><p>注释：该变量仍然是函数的局部变量。</p><h4 id="PHP-echo-和-print-语句"><a href="#PHP-echo-和-print-语句" class="headerlink" title="PHP echo 和 print 语句"></a>PHP echo 和 print 语句</h4><p>echo 和 print 之间的差异：</p><p>echo - 能够输出一个以上的字符串<br>print - 只能输出一个字符串，并始终返回 1</p><p>提示：echo 比 print 稍快，因为它不返回任何值。</p><p>使用方法一致。<br>都是语言结构，有无括号均可使用， 字符串中能包含 HTML 标记</p><pre><code>&lt;?phpecho &quot;&lt;h2&gt;PHP is fun!&lt;/h2&gt;&quot;;echo &quot;Hello world!&lt;br&gt;&quot;;echo &quot;I&apos;m about to learn PHP!&lt;br&gt;&quot;;echo &quot;This&quot;, &quot; string&quot;, &quot; was&quot;, &quot; made&quot;, &quot; with multiple parameters.&quot;;echo $txt1;echo &quot;&lt;br&gt;&quot;;echo &quot;Study PHP at $txt2&quot;;echo &quot;&lt;br&gt;&quot;;echo &quot;My car is a {$cars[0]}&quot;;?&gt;</code></pre><h4 id="PHP-字符串"><a href="#PHP-字符串" class="headerlink" title="PHP 字符串"></a>PHP 字符串</h4><p>字符串可以是引号内的任何文本。可以使用单引号或双引</p><h4 id="PHP-逻辑"><a href="#PHP-逻辑" class="headerlink" title="PHP 逻辑"></a>PHP 逻辑</h4><p>逻辑是 true 或 false。</p><pre><code>$x=true;$y=false;</code></pre><h4 id="yii框架"><a href="#yii框架" class="headerlink" title="yii框架"></a>yii框架</h4><p>has one、many和belongs_to的属性所在表刚好相反<br>belongs_to 当前的多对一<br>has many 1对多</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;PHP-脚本&quot;&gt;&lt;a href=&quot;#PHP-脚本&quot; class=&quot;headerlink&quot; title=&quot;PHP 脚本&quot;&gt;&lt;/a&gt;PHP 脚本&lt;/h4&gt;&lt;p&gt;可放置于文档中的任何位置。&lt;br&gt;PHP 脚本以 &amp;lt;?php 开头，以 ?&amp;gt; 结尾：&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="PHP" scheme="https://www.jpan.ink/categories/PHP/"/>
-    
-    
-      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mysql性能优化</title>
     <link href="https://www.jpan.ink/2016/06/20/Mysql-optimization/"/>
     <id>https://www.jpan.ink/2016/06/20/Mysql-optimization/</id>
@@ -356,6 +333,28 @@
     
     
       <category term="Performance-optimization" scheme="https://www.jpan.ink/tags/Performance-optimization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP基础语法</title>
+    <link href="https://www.jpan.ink/2016/06/20/PHP-note/"/>
+    <id>https://www.jpan.ink/2016/06/20/PHP-note/</id>
+    <published>2016-06-19T16:00:00.000Z</published>
+    <updated>2019-03-17T15:35:05.881Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="PHP-脚本"><a href="#PHP-脚本" class="headerlink" title="PHP 脚本"></a>PHP 脚本</h4><p>可放置于文档中的任何位置。<br>PHP 脚本以 &lt;?php 开头，以 ?&gt; 结尾：<br><a id="more"></a></p><pre><code>&lt;?php// 此处是 PHP 代码?&gt;</code></pre><p>PHP 文件的默认文件扩展名是 “.php”。</p><p>PHP 文件通常包含 HTML 标签以及一些 PHP 脚本代码。</p><h4 id="PHP-支持三种注释："><a href="#PHP-支持三种注释：" class="headerlink" title="PHP 支持三种注释："></a>PHP 支持三种注释：</h4><pre><code>// 这是单行注释# 这也是单行注释/*这是多行注释块多行*/</code></pre><h4 id="PHP-大小写敏感"><a href="#PHP-大小写敏感" class="headerlink" title="PHP 大小写敏感"></a>PHP 大小写敏感</h4><p>在 PHP 中，所有用户定义的函数、类和关键词（例如 if、else、echo 等等）都对大小写不敏感。</p><p>所有变量都对大小写敏感。</p><h4 id="PHP-变量规则："><a href="#PHP-变量规则：" class="headerlink" title="PHP 变量规则："></a>PHP 变量规则：</h4><p>变量以 $ 符号开头，其后是变量的名称<br>变量名称必须以字母或下划线开头<br>变量名称不能以数字开头<br>变量名称只能包含字母数字字符和下划线（A-z、0-9 以及 _）<br>变量名称对大小写敏感（$y 与 $Y 是两个不同的变量）</p><h4 id="PHP-有三种不同的变量作用域："><a href="#PHP-有三种不同的变量作用域：" class="headerlink" title="PHP 有三种不同的变量作用域："></a>PHP 有三种不同的变量作用域：</h4><p>local（局部）<br>global（全局）<br>static（静态）<br>函数之外声明的变量拥有 Global 作用域，只能在函数以外进行访问。</p><p>函数内部声明的变量拥有 LOCAL 作用域，只能在函数内部进行访问。 通常，当函数完成/执行后，会删除所有变量。</p><h4 id="PHP-global-关键词"><a href="#PHP-global-关键词" class="headerlink" title="PHP global 关键词"></a>PHP global 关键词</h4><p>global 关键词用于在函数内 访问全局变量。<br>要做到这一点，请在（函数内部）变量前面使用 global 关键词：<br>global $x,$y;<br> $GLOBALS[‘y’]=$GLOBALS[‘x’]+$GLOBALS[‘y’];</p><h4 id="PHP-static-关键词"><a href="#PHP-static-关键词" class="headerlink" title="PHP static 关键词"></a>PHP static 关键词</h4><p>首次声明变量时使用 static 关键词，不删除某个局部变量。<br>每当函数被调用时，这个变量所存储的信息都是函数最后一次被调用时所包含的信息。</p><p>注释：该变量仍然是函数的局部变量。</p><h4 id="PHP-echo-和-print-语句"><a href="#PHP-echo-和-print-语句" class="headerlink" title="PHP echo 和 print 语句"></a>PHP echo 和 print 语句</h4><p>echo 和 print 之间的差异：</p><p>echo - 能够输出一个以上的字符串<br>print - 只能输出一个字符串，并始终返回 1</p><p>提示：echo 比 print 稍快，因为它不返回任何值。</p><p>使用方法一致。<br>都是语言结构，有无括号均可使用， 字符串中能包含 HTML 标记</p><pre><code>&lt;?phpecho &quot;&lt;h2&gt;PHP is fun!&lt;/h2&gt;&quot;;echo &quot;Hello world!&lt;br&gt;&quot;;echo &quot;I&apos;m about to learn PHP!&lt;br&gt;&quot;;echo &quot;This&quot;, &quot; string&quot;, &quot; was&quot;, &quot; made&quot;, &quot; with multiple parameters.&quot;;echo $txt1;echo &quot;&lt;br&gt;&quot;;echo &quot;Study PHP at $txt2&quot;;echo &quot;&lt;br&gt;&quot;;echo &quot;My car is a {$cars[0]}&quot;;?&gt;</code></pre><h4 id="PHP-字符串"><a href="#PHP-字符串" class="headerlink" title="PHP 字符串"></a>PHP 字符串</h4><p>字符串可以是引号内的任何文本。可以使用单引号或双引</p><h4 id="PHP-逻辑"><a href="#PHP-逻辑" class="headerlink" title="PHP 逻辑"></a>PHP 逻辑</h4><p>逻辑是 true 或 false。</p><pre><code>$x=true;$y=false;</code></pre><h4 id="yii框架"><a href="#yii框架" class="headerlink" title="yii框架"></a>yii框架</h4><p>has one、many和belongs_to的属性所在表刚好相反<br>belongs_to 当前的多对一<br>has many 1对多</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;PHP-脚本&quot;&gt;&lt;a href=&quot;#PHP-脚本&quot; class=&quot;headerlink&quot; title=&quot;PHP 脚本&quot;&gt;&lt;/a&gt;PHP 脚本&lt;/h4&gt;&lt;p&gt;可放置于文档中的任何位置。&lt;br&gt;PHP 脚本以 &amp;lt;?php 开头，以 ?&amp;gt; 结尾：&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="PHP" scheme="https://www.jpan.ink/categories/PHP/"/>
+    
+    
+      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
     
   </entry>
   
@@ -387,28 +386,6 @@
   </entry>
   
   <entry>
-    <title>Jq基础语法</title>
-    <link href="https://www.jpan.ink/2016/04/22/Jq-note/"/>
-    <id>https://www.jpan.ink/2016/04/22/Jq-note/</id>
-    <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2019-03-17T14:26:09.149Z</updated>
-    
-    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>jQuery 为HTML元素服务</p></li><li><p>语法是Xpath和CSS选择器语法结合</p><pre><code>$(this).hide()   this ：html元素\#text   id=test   this#text.test   class=test   this.class$(selector).action()$(document).ready(function(){    })</code></pre></li><li><p>括号内  选择器要加双引号</p></li><li><p>使用XPath表达式选择带有给定属性的元素</p></li></ul><pre><code>$(“[href]”)$(“[href  =’    ’]”)    完全匹配$(“[href  !=’    ‘]”)$(“[href$ =’.jpg’]”)      以。。。结尾$(“ul li:first”)$(“div#intro.head”)</code></pre><ul><li><p>JQuery 为事件处理特别设计的</p></li><li><p>通常放到<head>部分</head></p></li><li><p>多页面，希望jq易于维护，放到js文件里面</p><pre><code>&lt;head&gt;&lt;script type=”text/javascript” src=“XXXX.js” &gt;&lt;/script&gt;&lt;/head&gt;</code></pre></li><li><p>Jq $冲突</p><pre><code>Var jq =jQuery.noConflict();$.noConflict();  默认用jQuery代替$</code></pre></li><li><p>jQuery事件</p><pre><code>$(document).ready(  )$(selector).click(  )$(selector).dblclick(   )$(selector).focus(  )$(selector).mouseover()</code></pre></li></ul><h3 id="jQuery-效果"><a href="#jQuery-效果" class="headerlink" title="jQuery 效果"></a>jQuery 效果</h3><p>默认校验规则</p><p>(1)required:true 必输字段</p><p>(2)remote:”check.php” 使用ajax方法调用check.php验证输入值</p><p>(3)email:true 必须输入正确格式的电子邮件</p><p>(4)url:true 必须输入正确格式的网址</p><p>(5)date:true 必须输入正确格式的日期</p><p>(6)dateISO:true 必须输入正确格式的日期(ISO)，例如：2009-06-23，1998/01/22 只验证格式，不验证有效性</p><p>(7)number:true 必须输入合法的数字(负数，小数)</p><p>(8)digits:true 必须输入整数</p><p>(9)creditcard: 必须输入合法的信用卡号</p><p>(10)equalTo:”#field” 输入值必须和#field相同</p><p>(11)accept: 输入拥有合法后缀名的字符串（上传文件的后缀）</p><p>(12)maxlength:5 输入长度最多是5的字符串(汉字算一个字符)</p><p>(13)minlength:10 输入长度最小是10的字符串(汉字算一个字符)</p><p>(14)rangelength:[5,10] 输入长度必须介于 5 和 10 之间的字符串”)(汉字算一个字符)</p><p>(15)range:[5,10] 输入值必须介于 5 和 10 之间</p><p>(16)max:5 输入值不能大于5</p><p>(17)min:10 输入值不能小于10</p>]]></content>
-    
-    <summary type="html">
-    
-      notes
-    
-    </summary>
-    
-      <category term="Jq" scheme="https://www.jpan.ink/categories/Jq/"/>
-    
-    
-      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Js基础语法</title>
     <link href="https://www.jpan.ink/2016/04/22/Js-note/"/>
     <id>https://www.jpan.ink/2016/04/22/Js-note/</id>
@@ -424,6 +401,28 @@
     </summary>
     
       <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
+    
+    
+      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jq基础语法</title>
+    <link href="https://www.jpan.ink/2016/04/22/Jq-note/"/>
+    <id>https://www.jpan.ink/2016/04/22/Jq-note/</id>
+    <published>2016-04-21T16:00:00.000Z</published>
+    <updated>2019-03-17T14:26:09.149Z</updated>
+    
+    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>jQuery 为HTML元素服务</p></li><li><p>语法是Xpath和CSS选择器语法结合</p><pre><code>$(this).hide()   this ：html元素\#text   id=test   this#text.test   class=test   this.class$(selector).action()$(document).ready(function(){    })</code></pre></li><li><p>括号内  选择器要加双引号</p></li><li><p>使用XPath表达式选择带有给定属性的元素</p></li></ul><pre><code>$(“[href]”)$(“[href  =’    ’]”)    完全匹配$(“[href  !=’    ‘]”)$(“[href$ =’.jpg’]”)      以。。。结尾$(“ul li:first”)$(“div#intro.head”)</code></pre><ul><li><p>JQuery 为事件处理特别设计的</p></li><li><p>通常放到<head>部分</head></p></li><li><p>多页面，希望jq易于维护，放到js文件里面</p><pre><code>&lt;head&gt;&lt;script type=”text/javascript” src=“XXXX.js” &gt;&lt;/script&gt;&lt;/head&gt;</code></pre></li><li><p>Jq $冲突</p><pre><code>Var jq =jQuery.noConflict();$.noConflict();  默认用jQuery代替$</code></pre></li><li><p>jQuery事件</p><pre><code>$(document).ready(  )$(selector).click(  )$(selector).dblclick(   )$(selector).focus(  )$(selector).mouseover()</code></pre></li></ul><h3 id="jQuery-效果"><a href="#jQuery-效果" class="headerlink" title="jQuery 效果"></a>jQuery 效果</h3><p>默认校验规则</p><p>(1)required:true 必输字段</p><p>(2)remote:”check.php” 使用ajax方法调用check.php验证输入值</p><p>(3)email:true 必须输入正确格式的电子邮件</p><p>(4)url:true 必须输入正确格式的网址</p><p>(5)date:true 必须输入正确格式的日期</p><p>(6)dateISO:true 必须输入正确格式的日期(ISO)，例如：2009-06-23，1998/01/22 只验证格式，不验证有效性</p><p>(7)number:true 必须输入合法的数字(负数，小数)</p><p>(8)digits:true 必须输入整数</p><p>(9)creditcard: 必须输入合法的信用卡号</p><p>(10)equalTo:”#field” 输入值必须和#field相同</p><p>(11)accept: 输入拥有合法后缀名的字符串（上传文件的后缀）</p><p>(12)maxlength:5 输入长度最多是5的字符串(汉字算一个字符)</p><p>(13)minlength:10 输入长度最小是10的字符串(汉字算一个字符)</p><p>(14)rangelength:[5,10] 输入长度必须介于 5 和 10 之间的字符串”)(汉字算一个字符)</p><p>(15)range:[5,10] 输入值必须介于 5 和 10 之间</p><p>(16)max:5 输入值不能大于5</p><p>(17)min:10 输入值不能小于10</p>]]></content>
+    
+    <summary type="html">
+    
+      notes
+    
+    </summary>
+    
+      <category term="Jq" scheme="https://www.jpan.ink/categories/Jq/"/>
     
     
       <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
