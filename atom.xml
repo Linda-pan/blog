@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jpan.ink/"/>
-  <updated>2019-03-25T16:22:28.037Z</updated>
+  <updated>2019-03-25T17:04:42.992Z</updated>
   <id>https://www.jpan.ink/</id>
   
   <author>
@@ -21,15 +21,16 @@
     <link href="https://www.jpan.ink/2019/03/25/Resume/"/>
     <id>https://www.jpan.ink/2019/03/25/Resume/</id>
     <published>2019-03-24T16:00:00.000Z</published>
-    <updated>2019-03-25T16:22:28.037Z</updated>
+    <updated>2019-03-25T17:04:42.992Z</updated>
     
-    <content type="html"><![CDATA[<p><font size="5">潘静</font>&nbsp;&nbsp; <strong>性别</strong>：女 &nbsp;&nbsp;<strong>电话</strong>：+86-135xxxx0145 &nbsp;&nbsp;<strong>E-mail</strong>：<a href="mailto:lanrong1639@126.com" target="_blank" rel="noopener">lanrong1639@126.com</a><br><br><strong>Blog</strong>：<a href="http://www.jpan.ink">www.jpan.ink</a> &nbsp;&nbsp; <strong>Web-Resume</strong>：<a href="http://www.jpan.ink/2019/03/25/Resume/">www.jpan.ink/2019/03/25/Resume/</a></p><hr><h3 id="教育背景"><a href="#教育背景" class="headerlink" title="教育背景"></a>教育背景</h3><ul><li>2012-09 ~ 2016-07月    本科，上海大学计算机系。校内两次学业奖学金，平均成绩前 12%。</li></ul><hr><h3 id="工作经验"><a href="#工作经验" class="headerlink" title="工作经验"></a>工作经验</h3><p>2016 年 5月-now    凯盛融英信息科技（上海）有限公司（金融公司）    Java 工程师</p><ul><li><p>工作内容：</p><ul><li>重构业务网站；提供 App 接口；开发新需求；创建和维护报表；分析处理数据等。</li></ul></li><li><p>技术描述：</p><ul><li>4年Java，2年Python经验</li><li>熟练使用Mysql，熟悉Mysql调优</li><li>熟悉 SpringMvc + Mybatis，SpringBoot 框架</li><li>了解 Redis，RabbitMq，ElasticSearch，RPC，Docker</li></ul></li><li><p>工作项目</p><h5 id="业务系统重构：主要coder之一"><a href="#业务系统重构：主要coder之一" class="headerlink" title="业务系统重构：主要coder之一"></a>业务系统重构：<div style="float:left;"></div><div style="float:right;">主要coder之一</div></h5><ul><li>2016年用ssm框架将原PHP业务网站重构，我独立提供了项目和报表模块的接口。</li><li>2018年底将业务系统微服务化，我独立提供了日志及美版相关数据的接口。项目为SpringBoot框架  使用了Motan的RPC服务，搭建在K8S管理Docker服务器上<h5 id="nbsp-nbsp-nbsp-App接口及运营网站：-2017-05-now负责人"><a href="#nbsp-nbsp-nbsp-App接口及运营网站：-2017-05-now负责人" class="headerlink" title="&nbsp;&nbsp;&nbsp;App接口及运营网站：        2017-05 ~ now负责人"></a>&nbsp;&nbsp;&nbsp;App接口及运营网站：        <div style="float:left;">2017-05 ~ now</div><div style="float:right;">负责人</div></h5></li><li>第一个大版本全程跟进，包括直播功能等，使用了七牛直播间的技术。</li><li>负责之后至今APP的4个版本的迭代。提供接口有支付模块，积分模块，征集模块等。使用了Redis,Rpc,RabbitMq等技术。与此同时负责运营网站的变更，主要提供App运营事务，权限控制和数据查询之类。为JSP+Spring+Mybatis的框架模式。<h5 id="nbsp-nbsp-nbsp-公司业务流程优化2017-12-2018-04主要coder之一"><a href="#nbsp-nbsp-nbsp-公司业务流程优化2017-12-2018-04主要coder之一" class="headerlink" title="&nbsp;&nbsp;&nbsp;公司业务流程优化2017-12 ~ 2018-04主要coder之一"></a>&nbsp;&nbsp;&nbsp;公司业务流程优化<div style="float:left;">2017-12 ~ 2018-04</div><div style="float:right;">主要coder之一</div></h5></li><li>使用python解析长文本得到关键词。</li><li>优化内外部搜索，内部数据优化了ElasticSearch，对外使用python进行信息爬取。<h5 id="nbsp-nbsp-nbsp-构建财务系统2017-09-2018-01主要coder之一"><a href="#nbsp-nbsp-nbsp-构建财务系统2017-09-2018-01主要coder之一" class="headerlink" title="&nbsp;&nbsp;&nbsp;构建财务系统2017-09 ~ 2018-01主要coder之一"></a>&nbsp;&nbsp;&nbsp;构建财务系统<div style="float:left;">2017-09 ~ 2018-01</div><div style="float:right;">主要coder之一</div></h5></li><li>全程跟进将3年财务数据迁入到系统中，使用了python和datanitro等工具</li><li>共同开发出一套记账出票流程。包含与业务人员直接对接，了解产品以及提供后端的财务接口</li><li>通过该项目获得了年度公司新锐奖</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<p><div style="float:left;font-weight:bold;"><font size="5">潘静</font></div></p><p><div style="float:right;"><font style="font-weight:bold;">性别</font>：女 &nbsp;&nbsp;<font style="font-weight:bold;">E-mail</font>：<a href="mailto:lanrong1639@126.com" target="_blank" rel="noopener">lanrong1639@126.com</a> </div><br><br></p><p><div style="float:right;"><font style="font-weight:bold;">电话</font> +86-135XXXX0145 &nbsp;&nbsp;<font style="font-weight:bold;">Blog</font>：<a href="http://www.jpan.ink">www.jpan.ink</a> </div></p><hr><h3 id="教育背景"><a href="#教育背景" class="headerlink" title="教育背景"></a>教育背景</h3><ul><li>2012-09 ~ 2016-07    本科，上海大学计算机系。校内两次学业奖学金，平均成绩前 12%。</li></ul><hr><h3 id="工作经验"><a href="#工作经验" class="headerlink" title="工作经验"></a>工作经验</h3><p>2016-5 ~ now&nbsp;&nbsp;凯盛融英信息科技（上海）有限公司&nbsp;&nbsp;&nbsp;&nbsp;Java 工程师</p><ul><li><p>工作内容：</p><ul><li>处理业务需求；版本迭代App接口及运营网站；创建和维护报表；项目模块优化等。</li></ul></li><li><p>技术描述：</p><ul><li>4年Java，2年Python经验</li><li>熟练使用Mysql，熟悉Mysql调优</li><li>熟悉 SpringMVC + Mybatis，SpringBoot 框架</li><li>熟悉 Redis，RabbitMq，ElasticSearch，RPC，Docker</li></ul></li><li><p>工作项目</p><h5 id="nbsp-nbsp-nbsp-业务系统重构：2016-05-now主要coder之一"><a href="#nbsp-nbsp-nbsp-业务系统重构：2016-05-now主要coder之一" class="headerlink" title="&nbsp;&nbsp;&nbsp;业务系统重构：2016-05 ~ now主要coder之一"></a>&nbsp;&nbsp;&nbsp;业务系统重构：<div style="float:left;">2016-05 ~ now</div><div style="float:right;">主要coder之一</div></h5><ul><li>2016年用SSM框架将原PHP业务网站重构，我独立负责了项目和报表模块的接口。</li><li>2018年底将业务系统微服务化，我独立负责了日志、报表及美版相关数据的接口。项目为SpringBoot框架，使用了Motan的RPC服务，搭建在K8S管理的Docker服务器上<h5 id="nbsp-nbsp-nbsp-App接口及运营网站：-2017-05-now负责人"><a href="#nbsp-nbsp-nbsp-App接口及运营网站：-2017-05-now负责人" class="headerlink" title="&nbsp;&nbsp;&nbsp;App接口及运营网站：        2017-05 ~ now负责人"></a>&nbsp;&nbsp;&nbsp;App接口及运营网站：        <div style="float:left;">2017-05 ~ now</div><div style="float:right;">负责人</div></h5></li><li>第一个大版本全程跟进，包括直播功能等，使用了七牛直播间的技术。</li><li>负责之后至今APP的4个版本的迭代。提供接口有支付模块，积分模块，征集模块等。使用了Redis,RPC,RabbitMq等技术。与此同时负责运营网站的变更，主要提供App运营事务，权限控制和数据查询之类的功能。为JSP+Spring+Mybatis的框架模式。<h5 id="nbsp-nbsp-nbsp-公司业务流程优化：2017-12-2018-04主要coder之一"><a href="#nbsp-nbsp-nbsp-公司业务流程优化：2017-12-2018-04主要coder之一" class="headerlink" title="&nbsp;&nbsp;&nbsp;公司业务流程优化：2017-12 ~ 2018-04主要coder之一"></a>&nbsp;&nbsp;&nbsp;公司业务流程优化：<div style="float:left;">2017-12 ~ 2018-04</div><div style="float:right;">主要coder之一</div></h5></li><li>使用Python解析长文本得到关键词。</li><li>优化内外部搜索，内部数据优化了ElasticSearch，对外使用Python进行信息爬取。<h5 id="nbsp-nbsp-nbsp-构建财务系统：2017-09-2018-01主要coder之一"><a href="#nbsp-nbsp-nbsp-构建财务系统：2017-09-2018-01主要coder之一" class="headerlink" title="&nbsp;&nbsp;&nbsp;构建财务系统：2017-09 ~ 2018-01主要coder之一"></a>&nbsp;&nbsp;&nbsp;构建财务系统：<div style="float:left;">2017-09 ~ 2018-01</div><div style="float:right;">主要coder之一</div></h5></li><li>全程跟进将3年财务数据整理并迁入到数据库中，使用了Python和DataNitro等工具</li><li>参与开发出一套记账出票流程。与业务人员直接对接了解需求，提供后端的财务接口等</li><li>通过该项目获得了年度公司新锐奖</li></ul></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;font size=&quot;5&quot;&gt;潘静&lt;/font&gt;&amp;nbsp;&amp;nbsp; &lt;strong&gt;性别&lt;/strong&gt;：女 &amp;nbsp;&amp;nbsp;&lt;strong&gt;电话&lt;/strong&gt;：+86-135xxxx0145 &amp;nbsp;&amp;nbsp;&lt;strong&gt;E-mail&lt;/st
+        &lt;p&gt;&lt;div style=&quot;float:left;font-weight:bold;&quot;&gt;&lt;font size=&quot;5&quot;&gt;潘静&lt;/font&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div style=&quot;float:right;&quot;&gt;&lt;font style=&quot;font-weight:bold;&quot;
       
     
     </summary>
@@ -261,32 +262,6 @@
   </entry>
   
   <entry>
-    <title>Pickle-数据持久存储</title>
-    <link href="https://www.jpan.ink/2017/02/06/Python-pickle/"/>
-    <id>https://www.jpan.ink/2017/02/06/Python-pickle/</id>
-    <published>2017-02-05T16:00:00.000Z</published>
-    <updated>2019-03-17T15:19:45.464Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="pickle模块"><a href="#pickle模块" class="headerlink" title="pickle模块"></a>pickle模块</h4><ul><li>python的pickle模块实现了基本的数据序列和反序列化。通过pickle模块的序列化操作我们能够将程序中运行的对象信息保存到文件中去，永久存储；通过pickle模块的反序列化操作，我们能够从文件中创建上一次程序保存的对象</li></ul><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">　pickle.dump(obj, <span class="keyword">file</span>, [,protocol])</span><br><span class="line">　　注解：将对象obj保存到文件<span class="keyword">file</span>中去。</span><br><span class="line">　　　　　protocol为序列化使用的协议版本，<span class="number">0</span>：ASCII协议，所序列化的对象使用可打印的ASCII码表示；<span class="number">1</span>：老式的二进制协议；<span class="number">2</span>：<span class="number">2.3</span>版本引入的新二进制协议，较以前的更高效。其中协议<span class="number">0</span>和<span class="number">1</span>兼容老版本的<span class="keyword">python</span>。protocol默认值为<span class="number">0</span>。</span><br><span class="line">　　　　　<span class="keyword">file</span>：对象保存到的类文件对象。<span class="keyword">file</span>必须有<span class="keyword">write</span>()接口， <span class="keyword">file</span>可以是一个以<span class="string">'w'</span>方式打开的文件或者一个StringIO对象或者其他任何实现<span class="keyword">write</span>()接口的对象。如果protocol&gt;=<span class="number">1</span>，文件对象需要是二进制模式打开的。</span><br><span class="line"></span><br><span class="line">　pickle.load(<span class="keyword">file</span>)</span><br><span class="line">　　注解：从<span class="keyword">file</span>中读取一个字符串，并将它重构为原来的<span class="keyword">python</span>对象。</span><br><span class="line">　　<span class="keyword">file</span>:类文件对象，有<span class="keyword">read</span>()和readline()接口。</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;pickle模块&quot;&gt;&lt;a href=&quot;#pickle模块&quot; class=&quot;headerlink&quot; title=&quot;pickle模块&quot;&gt;&lt;/a&gt;pickle模块&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;python的pickle模块实现了基本的数据序列和反序列化。通过pickle模
-      
-    
-    </summary>
-    
-      <category term="Pickle" scheme="https://www.jpan.ink/categories/Pickle/"/>
-    
-    
-      <category term="Python" scheme="https://www.jpan.ink/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>在Python2.7中和编码作战</title>
     <link href="https://www.jpan.ink/2017/02/06/Python-code/"/>
     <id>https://www.jpan.ink/2017/02/06/Python-code/</id>
@@ -306,6 +281,32 @@
     </summary>
     
       <category term="Python" scheme="https://www.jpan.ink/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://www.jpan.ink/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pickle-数据持久存储</title>
+    <link href="https://www.jpan.ink/2017/02/06/Python-pickle/"/>
+    <id>https://www.jpan.ink/2017/02/06/Python-pickle/</id>
+    <published>2017-02-05T16:00:00.000Z</published>
+    <updated>2019-03-17T15:19:45.464Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="pickle模块"><a href="#pickle模块" class="headerlink" title="pickle模块"></a>pickle模块</h4><ul><li>python的pickle模块实现了基本的数据序列和反序列化。通过pickle模块的序列化操作我们能够将程序中运行的对象信息保存到文件中去，永久存储；通过pickle模块的反序列化操作，我们能够从文件中创建上一次程序保存的对象</li></ul><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">　pickle.dump(obj, <span class="keyword">file</span>, [,protocol])</span><br><span class="line">　　注解：将对象obj保存到文件<span class="keyword">file</span>中去。</span><br><span class="line">　　　　　protocol为序列化使用的协议版本，<span class="number">0</span>：ASCII协议，所序列化的对象使用可打印的ASCII码表示；<span class="number">1</span>：老式的二进制协议；<span class="number">2</span>：<span class="number">2.3</span>版本引入的新二进制协议，较以前的更高效。其中协议<span class="number">0</span>和<span class="number">1</span>兼容老版本的<span class="keyword">python</span>。protocol默认值为<span class="number">0</span>。</span><br><span class="line">　　　　　<span class="keyword">file</span>：对象保存到的类文件对象。<span class="keyword">file</span>必须有<span class="keyword">write</span>()接口， <span class="keyword">file</span>可以是一个以<span class="string">'w'</span>方式打开的文件或者一个StringIO对象或者其他任何实现<span class="keyword">write</span>()接口的对象。如果protocol&gt;=<span class="number">1</span>，文件对象需要是二进制模式打开的。</span><br><span class="line"></span><br><span class="line">　pickle.load(<span class="keyword">file</span>)</span><br><span class="line">　　注解：从<span class="keyword">file</span>中读取一个字符串，并将它重构为原来的<span class="keyword">python</span>对象。</span><br><span class="line">　　<span class="keyword">file</span>:类文件对象，有<span class="keyword">read</span>()和readline()接口。</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;pickle模块&quot;&gt;&lt;a href=&quot;#pickle模块&quot; class=&quot;headerlink&quot; title=&quot;pickle模块&quot;&gt;&lt;/a&gt;pickle模块&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;python的pickle模块实现了基本的数据序列和反序列化。通过pickle模
+      
+    
+    </summary>
+    
+      <category term="Pickle" scheme="https://www.jpan.ink/categories/Pickle/"/>
     
     
       <category term="Python" scheme="https://www.jpan.ink/tags/Python/"/>
@@ -409,28 +410,6 @@
   </entry>
   
   <entry>
-    <title>Js基础语法</title>
-    <link href="https://www.jpan.ink/2016/04/22/Js-note/"/>
-    <id>https://www.jpan.ink/2016/04/22/Js-note/</id>
-    <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2019-03-17T14:28:18.496Z</updated>
-    
-    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>大小写区分</p></li><li><p>忽略空格</p></li><li><p>单引号和双引号作用一致</p></li><li><p>；可加可不加</p></li><li><p>var carname=”Volvo”; var carname;值不变</p></li><li><p>var cars = new Array（）；</p></li><li><p>cars[0]=“”</p></li><li><p>数组下标从0开始</p></li><li><p>对象定义与寻址</p></li><li><p>字符串对象（所有事务都是对象）</p></li><li><p>txt.length=5</p></li><li><p>txt.indexOf()</p></li><li><p>txt.replace()</p></li><li><p>txt.search()</p></li><li><p>alert（““） 弹窗提示</p></li><li><p>函数外申明的变量是全局变量，网页上所有脚本和函数都可以访问它。可以</p></li><li><p>输出</p></li><li><p>document.getElementById(“demo”).innerHTML=”My First JavaScript”;+ document.write(“</p><p>My First JavaScript</p>“); <p></p></li><li><p>字符串变量+ 表示连接</p></li></ul><ul><li><p>数字和字符串相加得到字符串</p></li><li><p>=== 全等</p></li><li><p>In</p></li><li><p>var person={fname:”John”,lname:”Doe”,age:25};</p></li><li></li><li>for (x in person)</li><li>{</li><li>txt=txt + person[x];</li><li>}</li></ul><p>Js验证<br><a href="http://www.w3school.com.cn/js/js_form_validation.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/js/js_form_validation.asp</a></p>]]></content>
-    
-    <summary type="html">
-    
-      notes
-    
-    </summary>
-    
-      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
-    
-    
-      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Jq基础语法</title>
     <link href="https://www.jpan.ink/2016/04/22/Jq-note/"/>
     <id>https://www.jpan.ink/2016/04/22/Jq-note/</id>
@@ -446,6 +425,28 @@
     </summary>
     
       <category term="Jq" scheme="https://www.jpan.ink/categories/Jq/"/>
+    
+    
+      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Js基础语法</title>
+    <link href="https://www.jpan.ink/2016/04/22/Js-note/"/>
+    <id>https://www.jpan.ink/2016/04/22/Js-note/</id>
+    <published>2016-04-21T16:00:00.000Z</published>
+    <updated>2019-03-17T14:28:18.496Z</updated>
+    
+    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>大小写区分</p></li><li><p>忽略空格</p></li><li><p>单引号和双引号作用一致</p></li><li><p>；可加可不加</p></li><li><p>var carname=”Volvo”; var carname;值不变</p></li><li><p>var cars = new Array（）；</p></li><li><p>cars[0]=“”</p></li><li><p>数组下标从0开始</p></li><li><p>对象定义与寻址</p></li><li><p>字符串对象（所有事务都是对象）</p></li><li><p>txt.length=5</p></li><li><p>txt.indexOf()</p></li><li><p>txt.replace()</p></li><li><p>txt.search()</p></li><li><p>alert（““） 弹窗提示</p></li><li><p>函数外申明的变量是全局变量，网页上所有脚本和函数都可以访问它。可以</p></li><li><p>输出</p></li><li><p>document.getElementById(“demo”).innerHTML=”My First JavaScript”;+ document.write(“</p><p>My First JavaScript</p>“); <p></p></li><li><p>字符串变量+ 表示连接</p></li></ul><ul><li><p>数字和字符串相加得到字符串</p></li><li><p>=== 全等</p></li><li><p>In</p></li><li><p>var person={fname:”John”,lname:”Doe”,age:25};</p></li><li></li><li>for (x in person)</li><li>{</li><li>txt=txt + person[x];</li><li>}</li></ul><p>Js验证<br><a href="http://www.w3school.com.cn/js/js_form_validation.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/js/js_form_validation.asp</a></p>]]></content>
+    
+    <summary type="html">
+    
+      notes
+    
+    </summary>
+    
+      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
     
     
       <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
