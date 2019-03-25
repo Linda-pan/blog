@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jpan.ink/"/>
-  <updated>2019-03-25T16:09:27.999Z</updated>
+  <updated>2019-03-25T16:22:28.037Z</updated>
   <id>https://www.jpan.ink/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://www.jpan.ink/2019/03/25/Resume/"/>
-    <id>https://www.jpan.ink/2019/03/25/Resume/</id>
-    <published>2019-03-25T15:52:34.703Z</published>
-    <updated>2019-03-25T16:09:27.999Z</updated>
-    
-    <content type="html"><![CDATA[<font size="5">潘静</font>&nbsp;&nbsp; **性别**：女 &nbsp;&nbsp;**电话**：+86-13524460145 &nbsp;&nbsp;**E-mail**：lanrong1639@126.com&nbsp;&nbsp;**Blog**：www.jpan.ink ***### 教育背景* 2012-09 ~ 2016-07月本科，上海大学计算机系。校内两次学业奖学金，平均成绩前 12%。***### 工作经验2016 年 5月-now凯盛融英信息科技（上海）有限公司（金融公司）Java 工程师* 工作内容：* 重构业务网站；提供 App 接口；开发新需求；创建和维护报表；分析处理数据等。* 技术描述：* 4年Java，2年Python经验* 熟练使用Mysql，熟悉Mysql调优* 熟悉 SpringMvc + Mybatis，SpringBoot 框架* 了解 Redis，RabbitMq，ElasticSearch，RPC，Docker* 工作项目#####  业务系统重构：<div style="float:left;"></div><div style="float:right;">主要coder之一</div>* 2016年用ssm框架将原PHP业务网站重构，我独立提供了项目和报表模块的接口。* 2018年底将业务系统微服务化，我独立提供了日志及美版相关数据的接口。项目为SpringBoot框架  使用了Motan的RPC服务，搭建在K8S管理Docker服务器上##### &nbsp;&nbsp;&nbsp;App接口及运营网站：<div style="float:left;">2017-05 ~ now</div><div style="float:right;">负责人</div>* 第一个大版本全程跟进，包括直播功能等，使用了七牛直播间的技术。* 负责之后至今的4个版本的迭代，运营网站主要提供 app 流程控制和数据查询以及权限控制。语音转写通过异步处理 RabbitMQ 调用讯飞平台的语音转写接口得到音频文字版。亦可以发 Push 和 Email，框架为 Spring+Mybatis。#####  &nbsp;&nbsp;&nbsp;公司业务流程优化<div style="float:left;">2017-12 ~ 2018-04</div><div style="float:right;">主要coder之一</div>* 使用python解析长文本得到关键词。* 优化内外部搜索，内部数据优化了ElasticSearch，对外使用python进行信息爬取。#####  &nbsp;&nbsp;&nbsp;构建财务系统<div style="float:left;">2017-09 ~ 2018-01</div><div style="float:right;">主要coder之一</div>* 全程跟进将3年财务数据迁入到系统中，使用了python和datanitro等工具* 共同开发出一套记账出票流程。包含与业务人员直接对接，了解产品以及提供后端的财务接口* 通过该项目获得了年度公司新锐奖]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;font size=&quot;5&quot;&gt;潘静&lt;/font&gt;&amp;nbsp;&amp;nbsp; **性别**：女 &amp;nbsp;&amp;nbsp;**电话**：+86-13524460145 &amp;nbsp;&amp;nbsp;
-**E-mail**：lanrong1639@126.com	&amp;nbsp;&amp;nbsp;
-**
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Resume</title>
@@ -361,28 +338,6 @@
   </entry>
   
   <entry>
-    <title>PHP基础语法</title>
-    <link href="https://www.jpan.ink/2016/06/20/PHP-note/"/>
-    <id>https://www.jpan.ink/2016/06/20/PHP-note/</id>
-    <published>2016-06-19T16:00:00.000Z</published>
-    <updated>2019-03-17T15:35:05.881Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="PHP-脚本"><a href="#PHP-脚本" class="headerlink" title="PHP 脚本"></a>PHP 脚本</h4><p>可放置于文档中的任何位置。<br>PHP 脚本以 &lt;?php 开头，以 ?&gt; 结尾：<br><a id="more"></a></p><pre><code>&lt;?php// 此处是 PHP 代码?&gt;</code></pre><p>PHP 文件的默认文件扩展名是 “.php”。</p><p>PHP 文件通常包含 HTML 标签以及一些 PHP 脚本代码。</p><h4 id="PHP-支持三种注释："><a href="#PHP-支持三种注释：" class="headerlink" title="PHP 支持三种注释："></a>PHP 支持三种注释：</h4><pre><code>// 这是单行注释# 这也是单行注释/*这是多行注释块多行*/</code></pre><h4 id="PHP-大小写敏感"><a href="#PHP-大小写敏感" class="headerlink" title="PHP 大小写敏感"></a>PHP 大小写敏感</h4><p>在 PHP 中，所有用户定义的函数、类和关键词（例如 if、else、echo 等等）都对大小写不敏感。</p><p>所有变量都对大小写敏感。</p><h4 id="PHP-变量规则："><a href="#PHP-变量规则：" class="headerlink" title="PHP 变量规则："></a>PHP 变量规则：</h4><p>变量以 $ 符号开头，其后是变量的名称<br>变量名称必须以字母或下划线开头<br>变量名称不能以数字开头<br>变量名称只能包含字母数字字符和下划线（A-z、0-9 以及 _）<br>变量名称对大小写敏感（$y 与 $Y 是两个不同的变量）</p><h4 id="PHP-有三种不同的变量作用域："><a href="#PHP-有三种不同的变量作用域：" class="headerlink" title="PHP 有三种不同的变量作用域："></a>PHP 有三种不同的变量作用域：</h4><p>local（局部）<br>global（全局）<br>static（静态）<br>函数之外声明的变量拥有 Global 作用域，只能在函数以外进行访问。</p><p>函数内部声明的变量拥有 LOCAL 作用域，只能在函数内部进行访问。 通常，当函数完成/执行后，会删除所有变量。</p><h4 id="PHP-global-关键词"><a href="#PHP-global-关键词" class="headerlink" title="PHP global 关键词"></a>PHP global 关键词</h4><p>global 关键词用于在函数内 访问全局变量。<br>要做到这一点，请在（函数内部）变量前面使用 global 关键词：<br>global $x,$y;<br> $GLOBALS[‘y’]=$GLOBALS[‘x’]+$GLOBALS[‘y’];</p><h4 id="PHP-static-关键词"><a href="#PHP-static-关键词" class="headerlink" title="PHP static 关键词"></a>PHP static 关键词</h4><p>首次声明变量时使用 static 关键词，不删除某个局部变量。<br>每当函数被调用时，这个变量所存储的信息都是函数最后一次被调用时所包含的信息。</p><p>注释：该变量仍然是函数的局部变量。</p><h4 id="PHP-echo-和-print-语句"><a href="#PHP-echo-和-print-语句" class="headerlink" title="PHP echo 和 print 语句"></a>PHP echo 和 print 语句</h4><p>echo 和 print 之间的差异：</p><p>echo - 能够输出一个以上的字符串<br>print - 只能输出一个字符串，并始终返回 1</p><p>提示：echo 比 print 稍快，因为它不返回任何值。</p><p>使用方法一致。<br>都是语言结构，有无括号均可使用， 字符串中能包含 HTML 标记</p><pre><code>&lt;?phpecho &quot;&lt;h2&gt;PHP is fun!&lt;/h2&gt;&quot;;echo &quot;Hello world!&lt;br&gt;&quot;;echo &quot;I&apos;m about to learn PHP!&lt;br&gt;&quot;;echo &quot;This&quot;, &quot; string&quot;, &quot; was&quot;, &quot; made&quot;, &quot; with multiple parameters.&quot;;echo $txt1;echo &quot;&lt;br&gt;&quot;;echo &quot;Study PHP at $txt2&quot;;echo &quot;&lt;br&gt;&quot;;echo &quot;My car is a {$cars[0]}&quot;;?&gt;</code></pre><h4 id="PHP-字符串"><a href="#PHP-字符串" class="headerlink" title="PHP 字符串"></a>PHP 字符串</h4><p>字符串可以是引号内的任何文本。可以使用单引号或双引</p><h4 id="PHP-逻辑"><a href="#PHP-逻辑" class="headerlink" title="PHP 逻辑"></a>PHP 逻辑</h4><p>逻辑是 true 或 false。</p><pre><code>$x=true;$y=false;</code></pre><h4 id="yii框架"><a href="#yii框架" class="headerlink" title="yii框架"></a>yii框架</h4><p>has one、many和belongs_to的属性所在表刚好相反<br>belongs_to 当前的多对一<br>has many 1对多</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;PHP-脚本&quot;&gt;&lt;a href=&quot;#PHP-脚本&quot; class=&quot;headerlink&quot; title=&quot;PHP 脚本&quot;&gt;&lt;/a&gt;PHP 脚本&lt;/h4&gt;&lt;p&gt;可放置于文档中的任何位置。&lt;br&gt;PHP 脚本以 &amp;lt;?php 开头，以 ?&amp;gt; 结尾：&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="PHP" scheme="https://www.jpan.ink/categories/PHP/"/>
-    
-    
-      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mysql性能优化</title>
     <link href="https://www.jpan.ink/2016/06/20/Mysql-optimization/"/>
     <id>https://www.jpan.ink/2016/06/20/Mysql-optimization/</id>
@@ -401,6 +356,28 @@
     
     
       <category term="Performance-optimization" scheme="https://www.jpan.ink/tags/Performance-optimization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP基础语法</title>
+    <link href="https://www.jpan.ink/2016/06/20/PHP-note/"/>
+    <id>https://www.jpan.ink/2016/06/20/PHP-note/</id>
+    <published>2016-06-19T16:00:00.000Z</published>
+    <updated>2019-03-17T15:35:05.881Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="PHP-脚本"><a href="#PHP-脚本" class="headerlink" title="PHP 脚本"></a>PHP 脚本</h4><p>可放置于文档中的任何位置。<br>PHP 脚本以 &lt;?php 开头，以 ?&gt; 结尾：<br><a id="more"></a></p><pre><code>&lt;?php// 此处是 PHP 代码?&gt;</code></pre><p>PHP 文件的默认文件扩展名是 “.php”。</p><p>PHP 文件通常包含 HTML 标签以及一些 PHP 脚本代码。</p><h4 id="PHP-支持三种注释："><a href="#PHP-支持三种注释：" class="headerlink" title="PHP 支持三种注释："></a>PHP 支持三种注释：</h4><pre><code>// 这是单行注释# 这也是单行注释/*这是多行注释块多行*/</code></pre><h4 id="PHP-大小写敏感"><a href="#PHP-大小写敏感" class="headerlink" title="PHP 大小写敏感"></a>PHP 大小写敏感</h4><p>在 PHP 中，所有用户定义的函数、类和关键词（例如 if、else、echo 等等）都对大小写不敏感。</p><p>所有变量都对大小写敏感。</p><h4 id="PHP-变量规则："><a href="#PHP-变量规则：" class="headerlink" title="PHP 变量规则："></a>PHP 变量规则：</h4><p>变量以 $ 符号开头，其后是变量的名称<br>变量名称必须以字母或下划线开头<br>变量名称不能以数字开头<br>变量名称只能包含字母数字字符和下划线（A-z、0-9 以及 _）<br>变量名称对大小写敏感（$y 与 $Y 是两个不同的变量）</p><h4 id="PHP-有三种不同的变量作用域："><a href="#PHP-有三种不同的变量作用域：" class="headerlink" title="PHP 有三种不同的变量作用域："></a>PHP 有三种不同的变量作用域：</h4><p>local（局部）<br>global（全局）<br>static（静态）<br>函数之外声明的变量拥有 Global 作用域，只能在函数以外进行访问。</p><p>函数内部声明的变量拥有 LOCAL 作用域，只能在函数内部进行访问。 通常，当函数完成/执行后，会删除所有变量。</p><h4 id="PHP-global-关键词"><a href="#PHP-global-关键词" class="headerlink" title="PHP global 关键词"></a>PHP global 关键词</h4><p>global 关键词用于在函数内 访问全局变量。<br>要做到这一点，请在（函数内部）变量前面使用 global 关键词：<br>global $x,$y;<br> $GLOBALS[‘y’]=$GLOBALS[‘x’]+$GLOBALS[‘y’];</p><h4 id="PHP-static-关键词"><a href="#PHP-static-关键词" class="headerlink" title="PHP static 关键词"></a>PHP static 关键词</h4><p>首次声明变量时使用 static 关键词，不删除某个局部变量。<br>每当函数被调用时，这个变量所存储的信息都是函数最后一次被调用时所包含的信息。</p><p>注释：该变量仍然是函数的局部变量。</p><h4 id="PHP-echo-和-print-语句"><a href="#PHP-echo-和-print-语句" class="headerlink" title="PHP echo 和 print 语句"></a>PHP echo 和 print 语句</h4><p>echo 和 print 之间的差异：</p><p>echo - 能够输出一个以上的字符串<br>print - 只能输出一个字符串，并始终返回 1</p><p>提示：echo 比 print 稍快，因为它不返回任何值。</p><p>使用方法一致。<br>都是语言结构，有无括号均可使用， 字符串中能包含 HTML 标记</p><pre><code>&lt;?phpecho &quot;&lt;h2&gt;PHP is fun!&lt;/h2&gt;&quot;;echo &quot;Hello world!&lt;br&gt;&quot;;echo &quot;I&apos;m about to learn PHP!&lt;br&gt;&quot;;echo &quot;This&quot;, &quot; string&quot;, &quot; was&quot;, &quot; made&quot;, &quot; with multiple parameters.&quot;;echo $txt1;echo &quot;&lt;br&gt;&quot;;echo &quot;Study PHP at $txt2&quot;;echo &quot;&lt;br&gt;&quot;;echo &quot;My car is a {$cars[0]}&quot;;?&gt;</code></pre><h4 id="PHP-字符串"><a href="#PHP-字符串" class="headerlink" title="PHP 字符串"></a>PHP 字符串</h4><p>字符串可以是引号内的任何文本。可以使用单引号或双引</p><h4 id="PHP-逻辑"><a href="#PHP-逻辑" class="headerlink" title="PHP 逻辑"></a>PHP 逻辑</h4><p>逻辑是 true 或 false。</p><pre><code>$x=true;$y=false;</code></pre><h4 id="yii框架"><a href="#yii框架" class="headerlink" title="yii框架"></a>yii框架</h4><p>has one、many和belongs_to的属性所在表刚好相反<br>belongs_to 当前的多对一<br>has many 1对多</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;PHP-脚本&quot;&gt;&lt;a href=&quot;#PHP-脚本&quot; class=&quot;headerlink&quot; title=&quot;PHP 脚本&quot;&gt;&lt;/a&gt;PHP 脚本&lt;/h4&gt;&lt;p&gt;可放置于文档中的任何位置。&lt;br&gt;PHP 脚本以 &amp;lt;?php 开头，以 ?&amp;gt; 结尾：&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="PHP" scheme="https://www.jpan.ink/categories/PHP/"/>
+    
+    
+      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
     
   </entry>
   
@@ -432,28 +409,6 @@
   </entry>
   
   <entry>
-    <title>Jq基础语法</title>
-    <link href="https://www.jpan.ink/2016/04/22/Jq-note/"/>
-    <id>https://www.jpan.ink/2016/04/22/Jq-note/</id>
-    <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2019-03-17T14:26:09.149Z</updated>
-    
-    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>jQuery 为HTML元素服务</p></li><li><p>语法是Xpath和CSS选择器语法结合</p><pre><code>$(this).hide()   this ：html元素\#text   id=test   this#text.test   class=test   this.class$(selector).action()$(document).ready(function(){    })</code></pre></li><li><p>括号内  选择器要加双引号</p></li><li><p>使用XPath表达式选择带有给定属性的元素</p></li></ul><pre><code>$(“[href]”)$(“[href  =’    ’]”)    完全匹配$(“[href  !=’    ‘]”)$(“[href$ =’.jpg’]”)      以。。。结尾$(“ul li:first”)$(“div#intro.head”)</code></pre><ul><li><p>JQuery 为事件处理特别设计的</p></li><li><p>通常放到<head>部分</head></p></li><li><p>多页面，希望jq易于维护，放到js文件里面</p><pre><code>&lt;head&gt;&lt;script type=”text/javascript” src=“XXXX.js” &gt;&lt;/script&gt;&lt;/head&gt;</code></pre></li><li><p>Jq $冲突</p><pre><code>Var jq =jQuery.noConflict();$.noConflict();  默认用jQuery代替$</code></pre></li><li><p>jQuery事件</p><pre><code>$(document).ready(  )$(selector).click(  )$(selector).dblclick(   )$(selector).focus(  )$(selector).mouseover()</code></pre></li></ul><h3 id="jQuery-效果"><a href="#jQuery-效果" class="headerlink" title="jQuery 效果"></a>jQuery 效果</h3><p>默认校验规则</p><p>(1)required:true 必输字段</p><p>(2)remote:”check.php” 使用ajax方法调用check.php验证输入值</p><p>(3)email:true 必须输入正确格式的电子邮件</p><p>(4)url:true 必须输入正确格式的网址</p><p>(5)date:true 必须输入正确格式的日期</p><p>(6)dateISO:true 必须输入正确格式的日期(ISO)，例如：2009-06-23，1998/01/22 只验证格式，不验证有效性</p><p>(7)number:true 必须输入合法的数字(负数，小数)</p><p>(8)digits:true 必须输入整数</p><p>(9)creditcard: 必须输入合法的信用卡号</p><p>(10)equalTo:”#field” 输入值必须和#field相同</p><p>(11)accept: 输入拥有合法后缀名的字符串（上传文件的后缀）</p><p>(12)maxlength:5 输入长度最多是5的字符串(汉字算一个字符)</p><p>(13)minlength:10 输入长度最小是10的字符串(汉字算一个字符)</p><p>(14)rangelength:[5,10] 输入长度必须介于 5 和 10 之间的字符串”)(汉字算一个字符)</p><p>(15)range:[5,10] 输入值必须介于 5 和 10 之间</p><p>(16)max:5 输入值不能大于5</p><p>(17)min:10 输入值不能小于10</p>]]></content>
-    
-    <summary type="html">
-    
-      notes
-    
-    </summary>
-    
-      <category term="Jq" scheme="https://www.jpan.ink/categories/Jq/"/>
-    
-    
-      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Js基础语法</title>
     <link href="https://www.jpan.ink/2016/04/22/Js-note/"/>
     <id>https://www.jpan.ink/2016/04/22/Js-note/</id>
@@ -469,6 +424,28 @@
     </summary>
     
       <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
+    
+    
+      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jq基础语法</title>
+    <link href="https://www.jpan.ink/2016/04/22/Jq-note/"/>
+    <id>https://www.jpan.ink/2016/04/22/Jq-note/</id>
+    <published>2016-04-21T16:00:00.000Z</published>
+    <updated>2019-03-17T14:26:09.149Z</updated>
+    
+    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>jQuery 为HTML元素服务</p></li><li><p>语法是Xpath和CSS选择器语法结合</p><pre><code>$(this).hide()   this ：html元素\#text   id=test   this#text.test   class=test   this.class$(selector).action()$(document).ready(function(){    })</code></pre></li><li><p>括号内  选择器要加双引号</p></li><li><p>使用XPath表达式选择带有给定属性的元素</p></li></ul><pre><code>$(“[href]”)$(“[href  =’    ’]”)    完全匹配$(“[href  !=’    ‘]”)$(“[href$ =’.jpg’]”)      以。。。结尾$(“ul li:first”)$(“div#intro.head”)</code></pre><ul><li><p>JQuery 为事件处理特别设计的</p></li><li><p>通常放到<head>部分</head></p></li><li><p>多页面，希望jq易于维护，放到js文件里面</p><pre><code>&lt;head&gt;&lt;script type=”text/javascript” src=“XXXX.js” &gt;&lt;/script&gt;&lt;/head&gt;</code></pre></li><li><p>Jq $冲突</p><pre><code>Var jq =jQuery.noConflict();$.noConflict();  默认用jQuery代替$</code></pre></li><li><p>jQuery事件</p><pre><code>$(document).ready(  )$(selector).click(  )$(selector).dblclick(   )$(selector).focus(  )$(selector).mouseover()</code></pre></li></ul><h3 id="jQuery-效果"><a href="#jQuery-效果" class="headerlink" title="jQuery 效果"></a>jQuery 效果</h3><p>默认校验规则</p><p>(1)required:true 必输字段</p><p>(2)remote:”check.php” 使用ajax方法调用check.php验证输入值</p><p>(3)email:true 必须输入正确格式的电子邮件</p><p>(4)url:true 必须输入正确格式的网址</p><p>(5)date:true 必须输入正确格式的日期</p><p>(6)dateISO:true 必须输入正确格式的日期(ISO)，例如：2009-06-23，1998/01/22 只验证格式，不验证有效性</p><p>(7)number:true 必须输入合法的数字(负数，小数)</p><p>(8)digits:true 必须输入整数</p><p>(9)creditcard: 必须输入合法的信用卡号</p><p>(10)equalTo:”#field” 输入值必须和#field相同</p><p>(11)accept: 输入拥有合法后缀名的字符串（上传文件的后缀）</p><p>(12)maxlength:5 输入长度最多是5的字符串(汉字算一个字符)</p><p>(13)minlength:10 输入长度最小是10的字符串(汉字算一个字符)</p><p>(14)rangelength:[5,10] 输入长度必须介于 5 和 10 之间的字符串”)(汉字算一个字符)</p><p>(15)range:[5,10] 输入值必须介于 5 和 10 之间</p><p>(16)max:5 输入值不能大于5</p><p>(17)min:10 输入值不能小于10</p>]]></content>
+    
+    <summary type="html">
+    
+      notes
+    
+    </summary>
+    
+      <category term="Jq" scheme="https://www.jpan.ink/categories/Jq/"/>
     
     
       <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
