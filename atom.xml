@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.jpan.ink/"/>
-  <updated>2019-03-17T14:29:58.388Z</updated>
+  <updated>2019-03-25T16:09:27.999Z</updated>
   <id>https://www.jpan.ink/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://www.jpan.ink/2019/03/25/Resume/"/>
+    <id>https://www.jpan.ink/2019/03/25/Resume/</id>
+    <published>2019-03-25T15:52:34.703Z</published>
+    <updated>2019-03-25T16:09:27.999Z</updated>
+    
+    <content type="html"><![CDATA[<font size="5">潘静</font>&nbsp;&nbsp; **性别**：女 &nbsp;&nbsp;**电话**：+86-13524460145 &nbsp;&nbsp;**E-mail**：lanrong1639@126.com&nbsp;&nbsp;**Blog**：www.jpan.ink ***### 教育背景* 2012-09 ~ 2016-07月本科，上海大学计算机系。校内两次学业奖学金，平均成绩前 12%。***### 工作经验2016 年 5月-now凯盛融英信息科技（上海）有限公司（金融公司）Java 工程师* 工作内容：* 重构业务网站；提供 App 接口；开发新需求；创建和维护报表；分析处理数据等。* 技术描述：* 4年Java，2年Python经验* 熟练使用Mysql，熟悉Mysql调优* 熟悉 SpringMvc + Mybatis，SpringBoot 框架* 了解 Redis，RabbitMq，ElasticSearch，RPC，Docker* 工作项目#####  业务系统重构：<div style="float:left;"></div><div style="float:right;">主要coder之一</div>* 2016年用ssm框架将原PHP业务网站重构，我独立提供了项目和报表模块的接口。* 2018年底将业务系统微服务化，我独立提供了日志及美版相关数据的接口。项目为SpringBoot框架  使用了Motan的RPC服务，搭建在K8S管理Docker服务器上##### &nbsp;&nbsp;&nbsp;App接口及运营网站：<div style="float:left;">2017-05 ~ now</div><div style="float:right;">负责人</div>* 第一个大版本全程跟进，包括直播功能等，使用了七牛直播间的技术。* 负责之后至今的4个版本的迭代，运营网站主要提供 app 流程控制和数据查询以及权限控制。语音转写通过异步处理 RabbitMQ 调用讯飞平台的语音转写接口得到音频文字版。亦可以发 Push 和 Email，框架为 Spring+Mybatis。#####  &nbsp;&nbsp;&nbsp;公司业务流程优化<div style="float:left;">2017-12 ~ 2018-04</div><div style="float:right;">主要coder之一</div>* 使用python解析长文本得到关键词。* 优化内外部搜索，内部数据优化了ElasticSearch，对外使用python进行信息爬取。#####  &nbsp;&nbsp;&nbsp;构建财务系统<div style="float:left;">2017-09 ~ 2018-01</div><div style="float:right;">主要coder之一</div>* 全程跟进将3年财务数据迁入到系统中，使用了python和datanitro等工具* 共同开发出一套记账出票流程。包含与业务人员直接对接，了解产品以及提供后端的财务接口* 通过该项目获得了年度公司新锐奖]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;font size=&quot;5&quot;&gt;潘静&lt;/font&gt;&amp;nbsp;&amp;nbsp; **性别**：女 &amp;nbsp;&amp;nbsp;**电话**：+86-13524460145 &amp;nbsp;&amp;nbsp;
+**E-mail**：lanrong1639@126.com	&amp;nbsp;&amp;nbsp;
+**
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Resume</title>
+    <link href="https://www.jpan.ink/2019/03/25/Resume/"/>
+    <id>https://www.jpan.ink/2019/03/25/Resume/</id>
+    <published>2019-03-24T16:00:00.000Z</published>
+    <updated>2019-03-25T16:22:28.037Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="5">潘静</font>&nbsp;&nbsp; <strong>性别</strong>：女 &nbsp;&nbsp;<strong>电话</strong>：+86-135xxxx0145 &nbsp;&nbsp;<strong>E-mail</strong>：<a href="mailto:lanrong1639@126.com" target="_blank" rel="noopener">lanrong1639@126.com</a><br><br><strong>Blog</strong>：<a href="http://www.jpan.ink">www.jpan.ink</a> &nbsp;&nbsp; <strong>Web-Resume</strong>：<a href="http://www.jpan.ink/2019/03/25/Resume/">www.jpan.ink/2019/03/25/Resume/</a></p><hr><h3 id="教育背景"><a href="#教育背景" class="headerlink" title="教育背景"></a>教育背景</h3><ul><li>2012-09 ~ 2016-07月    本科，上海大学计算机系。校内两次学业奖学金，平均成绩前 12%。</li></ul><hr><h3 id="工作经验"><a href="#工作经验" class="headerlink" title="工作经验"></a>工作经验</h3><p>2016 年 5月-now    凯盛融英信息科技（上海）有限公司（金融公司）    Java 工程师</p><ul><li><p>工作内容：</p><ul><li>重构业务网站；提供 App 接口；开发新需求；创建和维护报表；分析处理数据等。</li></ul></li><li><p>技术描述：</p><ul><li>4年Java，2年Python经验</li><li>熟练使用Mysql，熟悉Mysql调优</li><li>熟悉 SpringMvc + Mybatis，SpringBoot 框架</li><li>了解 Redis，RabbitMq，ElasticSearch，RPC，Docker</li></ul></li><li><p>工作项目</p><h5 id="业务系统重构：主要coder之一"><a href="#业务系统重构：主要coder之一" class="headerlink" title="业务系统重构：主要coder之一"></a>业务系统重构：<div style="float:left;"></div><div style="float:right;">主要coder之一</div></h5><ul><li>2016年用ssm框架将原PHP业务网站重构，我独立提供了项目和报表模块的接口。</li><li>2018年底将业务系统微服务化，我独立提供了日志及美版相关数据的接口。项目为SpringBoot框架  使用了Motan的RPC服务，搭建在K8S管理Docker服务器上<h5 id="nbsp-nbsp-nbsp-App接口及运营网站：-2017-05-now负责人"><a href="#nbsp-nbsp-nbsp-App接口及运营网站：-2017-05-now负责人" class="headerlink" title="&nbsp;&nbsp;&nbsp;App接口及运营网站：        2017-05 ~ now负责人"></a>&nbsp;&nbsp;&nbsp;App接口及运营网站：        <div style="float:left;">2017-05 ~ now</div><div style="float:right;">负责人</div></h5></li><li>第一个大版本全程跟进，包括直播功能等，使用了七牛直播间的技术。</li><li>负责之后至今APP的4个版本的迭代。提供接口有支付模块，积分模块，征集模块等。使用了Redis,Rpc,RabbitMq等技术。与此同时负责运营网站的变更，主要提供App运营事务，权限控制和数据查询之类。为JSP+Spring+Mybatis的框架模式。<h5 id="nbsp-nbsp-nbsp-公司业务流程优化2017-12-2018-04主要coder之一"><a href="#nbsp-nbsp-nbsp-公司业务流程优化2017-12-2018-04主要coder之一" class="headerlink" title="&nbsp;&nbsp;&nbsp;公司业务流程优化2017-12 ~ 2018-04主要coder之一"></a>&nbsp;&nbsp;&nbsp;公司业务流程优化<div style="float:left;">2017-12 ~ 2018-04</div><div style="float:right;">主要coder之一</div></h5></li><li>使用python解析长文本得到关键词。</li><li>优化内外部搜索，内部数据优化了ElasticSearch，对外使用python进行信息爬取。<h5 id="nbsp-nbsp-nbsp-构建财务系统2017-09-2018-01主要coder之一"><a href="#nbsp-nbsp-nbsp-构建财务系统2017-09-2018-01主要coder之一" class="headerlink" title="&nbsp;&nbsp;&nbsp;构建财务系统2017-09 ~ 2018-01主要coder之一"></a>&nbsp;&nbsp;&nbsp;构建财务系统<div style="float:left;">2017-09 ~ 2018-01</div><div style="float:right;">主要coder之一</div></h5></li><li>全程跟进将3年财务数据迁入到系统中，使用了python和datanitro等工具</li><li>共同开发出一套记账出票流程。包含与业务人员直接对接，了解产品以及提供后端的财务接口</li><li>通过该项目获得了年度公司新锐奖</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;font size=&quot;5&quot;&gt;潘静&lt;/font&gt;&amp;nbsp;&amp;nbsp; &lt;strong&gt;性别&lt;/strong&gt;：女 &amp;nbsp;&amp;nbsp;&lt;strong&gt;电话&lt;/strong&gt;：+86-135xxxx0145 &amp;nbsp;&amp;nbsp;&lt;strong&gt;E-mail&lt;/st
+      
+    
+    </summary>
+    
+      <category term="Resume" scheme="https://www.jpan.ink/categories/Resume/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>五种RabbitMQ队列</title>
@@ -315,28 +361,6 @@
   </entry>
   
   <entry>
-    <title>Mysql性能优化</title>
-    <link href="https://www.jpan.ink/2016/06/20/Mysql-optimization/"/>
-    <id>https://www.jpan.ink/2016/06/20/Mysql-optimization/</id>
-    <published>2016-06-19T16:00:00.000Z</published>
-    <updated>2019-03-17T15:09:42.271Z</updated>
-    
-    <content type="html"><![CDATA[<p> 案例<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="string">`xvideos`</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Between</span> 方式</span><br><span class="line">===========================</span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> xvideos</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">id</span> <span class="keyword">BETWEEN</span> <span class="number">3643710</span> <span class="keyword">AND</span> <span class="number">3643710</span> + <span class="number">30</span> - <span class="number">1</span></span><br><span class="line">查询花费 <span class="number">0.0007</span> 秒</span><br><span class="line"></span><br><span class="line"><span class="keyword">Where</span> <span class="keyword">ID</span> 方式</span><br><span class="line">===========================</span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> xvideos</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">id</span> &gt; <span class="number">3643710</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">id</span></span><br><span class="line"><span class="keyword">LIMIT</span> <span class="number">30</span></span><br><span class="line">查询花费 <span class="number">0.0379</span> 秒</span><br><span class="line"><span class="keyword">Limit</span>方式</span><br><span class="line">===========================</span><br><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> xvideos</span><br><span class="line"><span class="keyword">LIMIT</span> <span class="number">3643710</span> , <span class="number">30</span></span><br><span class="line">查询花费 <span class="number">19.3808</span> 秒</span><br><span class="line"></span><br><span class="line">SubQuery 子查询方式</span><br><span class="line">===========================</span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> xvideos <span class="keyword">WHERE</span> <span class="keyword">id</span> &gt;</span><br><span class="line">(<span class="keyword">SELECT</span> <span class="keyword">id</span> <span class="keyword">FROM</span> xvideos <span class="keyword">LIMIT</span> <span class="number">3643709</span>, <span class="number">1</span>) <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">id</span> <span class="keyword">asc</span> <span class="keyword">LIMIT</span> <span class="number">30</span></span><br><span class="line">查询花费 <span class="number">1.8362</span> 秒</span><br><span class="line"></span><br><span class="line"><span class="keyword">JOIN</span> 方式</span><br><span class="line">===========================</span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> xvideos <span class="keyword">AS</span> t1</span><br><span class="line"><span class="keyword">JOIN</span> (<span class="keyword">SELECT</span> <span class="keyword">id</span> <span class="keyword">FROM</span> xvideos <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">id</span> <span class="keyword">asc</span> <span class="keyword">LIMIT</span> <span class="number">3643709</span>, <span class="number">1</span>) <span class="keyword">AS</span> t2</span><br><span class="line"><span class="keyword">WHERE</span> t1.id &lt;= t2.id <span class="keyword">ORDER</span> <span class="keyword">BY</span> t1.id <span class="keyword">desc</span> <span class="keyword">LIMIT</span> <span class="number">30</span>;</span><br><span class="line">查询花费 1.1632 秒</span><br></pre></td></tr></table></figure></p><h4 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h4><ol><li>当一个数据库表过于庞大，LIMIT offset, length中的offset值过大，则SQL查询语句会非常缓慢，你需增加order by，并且order by字段需要建立索引。</li><li><p>如果使用子查询去优化LIMIT的话，则子查询必须是连续的，某种意义来讲，子查询不应该有where条件，where会过滤数据，使数据失去连续性。（where需要复合索引）。如果你查询的记录比较大，并且数据传输量比较大，比如包含了text类型的field，则可以通过建立子查询。<br>当偏移1000以上使用子查询法可以有效的提高性能。</p><pre><code>SELECT id,title,content FROM items WHERE id IN (SELECT id FROM items ORDER BY id limit 900000, 10);</code></pre></li></ol><ol><li><p>如果limit语句的offset较大，你可以通过传递pk键值来减小offset = 0，这个主键最好是int类型并且auto_increment</p><pre><code>SELECT * FROM users WHERE uid &gt;= (SELECT uid FROM users ORDER BY uid limit 895682, 1) limit 0, 10;</code></pre></li></ol><ol><li>如果limit的offset值过大，用户也会翻页疲劳，你可以设置一个offset最大的，超过了可以另行处理，一般连续翻页过大，用户体验很差，则应该提供更优的用户体验给用户。</li></ol><h4 id="limit-分页优化方法"><a href="#limit-分页优化方法" class="headerlink" title="limit 分页优化方法"></a>limit 分页优化方法</h4><ol><li><p>子查询优化法<br>从结果中可以得知，当偏移1000以上使用子查询法可以有效的提高性能。</p></li><li><p>倒排表优化法<br>倒排表法类似建立索引，用一张表来维护页数，然后通过高效的连接得到数据。缺点：只适合数据数固定的情况，数据不能删除，维护页表困难</p></li><li><p>反向查找优化法<br>当偏移超过一半记录数的时候，先用排序，这样偏移就反转了。缺点：order by优化比较麻烦，要增加索引，索引影响数据的修改效率，并且要知道总记录数，偏移大于数据的一半</p></li></ol><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">更新 date: 2019<span class="string">-02</span><span class="string">-20</span></span><br></pre></td></tr></table></figure><h3 id="了解Mysql的引擎"><a href="#了解Mysql的引擎" class="headerlink" title="了解Mysql的引擎"></a>了解Mysql的引擎</h3><h3 id="Mysql优化可以从三个角度"><a href="#Mysql优化可以从三个角度" class="headerlink" title="Mysql优化可以从三个角度"></a>Mysql优化可以从三个角度</h3><h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><h5 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h5><blockquote><p>FULLTEXT，HASH，BTREE，RTREE</p></blockquote><h5 id="种类"><a href="#种类" class="headerlink" title="种类"></a>种类</h5><ul><li>普通索引：仅加速查询</li><li>唯一索引：加速查询 + 列值唯一（可以有null）</li><li>主键索引：加速查询 + 列值唯一（不可以有null）+ 表中只有一个</li><li>组合索引：多列值组成一个索引，专门用于组合搜索，其效率大于索引合并</li><li>全文索引：对文本的内容进行分词，进行搜索</li></ul><h4 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h4><blockquote><p>行锁，表锁，页锁</p></blockquote><h4 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h4><h5 id="explain"><a href="#explain" class="headerlink" title="explain"></a>explain</h5><ul><li>select_type<br>select查询的类型，主要是区别普通查询和联合查询、子查询之类的复杂查询。</li><li>type<br>联合查询所使用的类型。<br>type显示的是访问类型，是较为重要的一个指标，结果值从好到坏依次是：<br>system &gt; const &gt; eq_ref &gt; ref &gt; fulltext &gt; ref_or_null &gt; index_merge &gt; unique_subquery &gt; index_subquery &gt; range &gt; index &gt; ALL</li></ul><p>！[美团案例]:(<a href="https://tech.meituan.com/2014/06/30/mysql-index.html" target="_blank" rel="noopener">https://tech.meituan.com/2014/06/30/mysql-index.html</a>)</p>]]></content>
-    
-    <summary type="html">
-    
-      Mysql性能优化
-    
-    </summary>
-    
-      <category term="Mysql" scheme="https://www.jpan.ink/categories/Mysql/"/>
-    
-    
-      <category term="Performance-optimization" scheme="https://www.jpan.ink/tags/Performance-optimization/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PHP基础语法</title>
     <link href="https://www.jpan.ink/2016/06/20/PHP-note/"/>
     <id>https://www.jpan.ink/2016/06/20/PHP-note/</id>
@@ -355,6 +379,28 @@
     
     
       <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql性能优化</title>
+    <link href="https://www.jpan.ink/2016/06/20/Mysql-optimization/"/>
+    <id>https://www.jpan.ink/2016/06/20/Mysql-optimization/</id>
+    <published>2016-06-19T16:00:00.000Z</published>
+    <updated>2019-03-17T15:09:42.271Z</updated>
+    
+    <content type="html"><![CDATA[<p> 案例<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="string">`xvideos`</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">Between</span> 方式</span><br><span class="line">===========================</span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> xvideos</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">id</span> <span class="keyword">BETWEEN</span> <span class="number">3643710</span> <span class="keyword">AND</span> <span class="number">3643710</span> + <span class="number">30</span> - <span class="number">1</span></span><br><span class="line">查询花费 <span class="number">0.0007</span> 秒</span><br><span class="line"></span><br><span class="line"><span class="keyword">Where</span> <span class="keyword">ID</span> 方式</span><br><span class="line">===========================</span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> xvideos</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">id</span> &gt; <span class="number">3643710</span></span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">id</span></span><br><span class="line"><span class="keyword">LIMIT</span> <span class="number">30</span></span><br><span class="line">查询花费 <span class="number">0.0379</span> 秒</span><br><span class="line"><span class="keyword">Limit</span>方式</span><br><span class="line">===========================</span><br><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> xvideos</span><br><span class="line"><span class="keyword">LIMIT</span> <span class="number">3643710</span> , <span class="number">30</span></span><br><span class="line">查询花费 <span class="number">19.3808</span> 秒</span><br><span class="line"></span><br><span class="line">SubQuery 子查询方式</span><br><span class="line">===========================</span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> xvideos <span class="keyword">WHERE</span> <span class="keyword">id</span> &gt;</span><br><span class="line">(<span class="keyword">SELECT</span> <span class="keyword">id</span> <span class="keyword">FROM</span> xvideos <span class="keyword">LIMIT</span> <span class="number">3643709</span>, <span class="number">1</span>) <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">id</span> <span class="keyword">asc</span> <span class="keyword">LIMIT</span> <span class="number">30</span></span><br><span class="line">查询花费 <span class="number">1.8362</span> 秒</span><br><span class="line"></span><br><span class="line"><span class="keyword">JOIN</span> 方式</span><br><span class="line">===========================</span><br><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> xvideos <span class="keyword">AS</span> t1</span><br><span class="line"><span class="keyword">JOIN</span> (<span class="keyword">SELECT</span> <span class="keyword">id</span> <span class="keyword">FROM</span> xvideos <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="keyword">id</span> <span class="keyword">asc</span> <span class="keyword">LIMIT</span> <span class="number">3643709</span>, <span class="number">1</span>) <span class="keyword">AS</span> t2</span><br><span class="line"><span class="keyword">WHERE</span> t1.id &lt;= t2.id <span class="keyword">ORDER</span> <span class="keyword">BY</span> t1.id <span class="keyword">desc</span> <span class="keyword">LIMIT</span> <span class="number">30</span>;</span><br><span class="line">查询花费 1.1632 秒</span><br></pre></td></tr></table></figure></p><h4 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h4><ol><li>当一个数据库表过于庞大，LIMIT offset, length中的offset值过大，则SQL查询语句会非常缓慢，你需增加order by，并且order by字段需要建立索引。</li><li><p>如果使用子查询去优化LIMIT的话，则子查询必须是连续的，某种意义来讲，子查询不应该有where条件，where会过滤数据，使数据失去连续性。（where需要复合索引）。如果你查询的记录比较大，并且数据传输量比较大，比如包含了text类型的field，则可以通过建立子查询。<br>当偏移1000以上使用子查询法可以有效的提高性能。</p><pre><code>SELECT id,title,content FROM items WHERE id IN (SELECT id FROM items ORDER BY id limit 900000, 10);</code></pre></li></ol><ol><li><p>如果limit语句的offset较大，你可以通过传递pk键值来减小offset = 0，这个主键最好是int类型并且auto_increment</p><pre><code>SELECT * FROM users WHERE uid &gt;= (SELECT uid FROM users ORDER BY uid limit 895682, 1) limit 0, 10;</code></pre></li></ol><ol><li>如果limit的offset值过大，用户也会翻页疲劳，你可以设置一个offset最大的，超过了可以另行处理，一般连续翻页过大，用户体验很差，则应该提供更优的用户体验给用户。</li></ol><h4 id="limit-分页优化方法"><a href="#limit-分页优化方法" class="headerlink" title="limit 分页优化方法"></a>limit 分页优化方法</h4><ol><li><p>子查询优化法<br>从结果中可以得知，当偏移1000以上使用子查询法可以有效的提高性能。</p></li><li><p>倒排表优化法<br>倒排表法类似建立索引，用一张表来维护页数，然后通过高效的连接得到数据。缺点：只适合数据数固定的情况，数据不能删除，维护页表困难</p></li><li><p>反向查找优化法<br>当偏移超过一半记录数的时候，先用排序，这样偏移就反转了。缺点：order by优化比较麻烦，要增加索引，索引影响数据的修改效率，并且要知道总记录数，偏移大于数据的一半</p></li></ol><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">更新 date: 2019<span class="string">-02</span><span class="string">-20</span></span><br></pre></td></tr></table></figure><h3 id="了解Mysql的引擎"><a href="#了解Mysql的引擎" class="headerlink" title="了解Mysql的引擎"></a>了解Mysql的引擎</h3><h3 id="Mysql优化可以从三个角度"><a href="#Mysql优化可以从三个角度" class="headerlink" title="Mysql优化可以从三个角度"></a>Mysql优化可以从三个角度</h3><h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><h5 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h5><blockquote><p>FULLTEXT，HASH，BTREE，RTREE</p></blockquote><h5 id="种类"><a href="#种类" class="headerlink" title="种类"></a>种类</h5><ul><li>普通索引：仅加速查询</li><li>唯一索引：加速查询 + 列值唯一（可以有null）</li><li>主键索引：加速查询 + 列值唯一（不可以有null）+ 表中只有一个</li><li>组合索引：多列值组成一个索引，专门用于组合搜索，其效率大于索引合并</li><li>全文索引：对文本的内容进行分词，进行搜索</li></ul><h4 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h4><blockquote><p>行锁，表锁，页锁</p></blockquote><h4 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h4><h5 id="explain"><a href="#explain" class="headerlink" title="explain"></a>explain</h5><ul><li>select_type<br>select查询的类型，主要是区别普通查询和联合查询、子查询之类的复杂查询。</li><li>type<br>联合查询所使用的类型。<br>type显示的是访问类型，是较为重要的一个指标，结果值从好到坏依次是：<br>system &gt; const &gt; eq_ref &gt; ref &gt; fulltext &gt; ref_or_null &gt; index_merge &gt; unique_subquery &gt; index_subquery &gt; range &gt; index &gt; ALL</li></ul><p>！[美团案例]:(<a href="https://tech.meituan.com/2014/06/30/mysql-index.html" target="_blank" rel="noopener">https://tech.meituan.com/2014/06/30/mysql-index.html</a>)</p>]]></content>
+    
+    <summary type="html">
+    
+      Mysql性能优化
+    
+    </summary>
+    
+      <category term="Mysql" scheme="https://www.jpan.ink/categories/Mysql/"/>
+    
+    
+      <category term="Performance-optimization" scheme="https://www.jpan.ink/tags/Performance-optimization/"/>
     
   </entry>
   
@@ -386,28 +432,6 @@
   </entry>
   
   <entry>
-    <title>Js基础语法</title>
-    <link href="https://www.jpan.ink/2016/04/22/Js-note/"/>
-    <id>https://www.jpan.ink/2016/04/22/Js-note/</id>
-    <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2019-03-17T14:28:18.496Z</updated>
-    
-    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>大小写区分</p></li><li><p>忽略空格</p></li><li><p>单引号和双引号作用一致</p></li><li><p>；可加可不加</p></li><li><p>var carname=”Volvo”; var carname;值不变</p></li><li><p>var cars = new Array（）；</p></li><li><p>cars[0]=“”</p></li><li><p>数组下标从0开始</p></li><li><p>对象定义与寻址</p></li><li><p>字符串对象（所有事务都是对象）</p></li><li><p>txt.length=5</p></li><li><p>txt.indexOf()</p></li><li><p>txt.replace()</p></li><li><p>txt.search()</p></li><li><p>alert（““） 弹窗提示</p></li><li><p>函数外申明的变量是全局变量，网页上所有脚本和函数都可以访问它。可以</p></li><li><p>输出</p></li><li><p>document.getElementById(“demo”).innerHTML=”My First JavaScript”;+ document.write(“</p><p>My First JavaScript</p>“); <p></p></li><li><p>字符串变量+ 表示连接</p></li></ul><ul><li><p>数字和字符串相加得到字符串</p></li><li><p>=== 全等</p></li><li><p>In</p></li><li><p>var person={fname:”John”,lname:”Doe”,age:25};</p></li><li></li><li>for (x in person)</li><li>{</li><li>txt=txt + person[x];</li><li>}</li></ul><p>Js验证<br><a href="http://www.w3school.com.cn/js/js_form_validation.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/js/js_form_validation.asp</a></p>]]></content>
-    
-    <summary type="html">
-    
-      notes
-    
-    </summary>
-    
-      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
-    
-    
-      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Jq基础语法</title>
     <link href="https://www.jpan.ink/2016/04/22/Jq-note/"/>
     <id>https://www.jpan.ink/2016/04/22/Jq-note/</id>
@@ -423,6 +447,28 @@
     </summary>
     
       <category term="Jq" scheme="https://www.jpan.ink/categories/Jq/"/>
+    
+    
+      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Js基础语法</title>
+    <link href="https://www.jpan.ink/2016/04/22/Js-note/"/>
+    <id>https://www.jpan.ink/2016/04/22/Js-note/</id>
+    <published>2016-04-21T16:00:00.000Z</published>
+    <updated>2019-03-17T14:28:18.496Z</updated>
+    
+    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>大小写区分</p></li><li><p>忽略空格</p></li><li><p>单引号和双引号作用一致</p></li><li><p>；可加可不加</p></li><li><p>var carname=”Volvo”; var carname;值不变</p></li><li><p>var cars = new Array（）；</p></li><li><p>cars[0]=“”</p></li><li><p>数组下标从0开始</p></li><li><p>对象定义与寻址</p></li><li><p>字符串对象（所有事务都是对象）</p></li><li><p>txt.length=5</p></li><li><p>txt.indexOf()</p></li><li><p>txt.replace()</p></li><li><p>txt.search()</p></li><li><p>alert（““） 弹窗提示</p></li><li><p>函数外申明的变量是全局变量，网页上所有脚本和函数都可以访问它。可以</p></li><li><p>输出</p></li><li><p>document.getElementById(“demo”).innerHTML=”My First JavaScript”;+ document.write(“</p><p>My First JavaScript</p>“); <p></p></li><li><p>字符串变量+ 表示连接</p></li></ul><ul><li><p>数字和字符串相加得到字符串</p></li><li><p>=== 全等</p></li><li><p>In</p></li><li><p>var person={fname:”John”,lname:”Doe”,age:25};</p></li><li></li><li>for (x in person)</li><li>{</li><li>txt=txt + person[x];</li><li>}</li></ul><p>Js验证<br><a href="http://www.w3school.com.cn/js/js_form_validation.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/js/js_form_validation.asp</a></p>]]></content>
+    
+    <summary type="html">
+    
+      notes
+    
+    </summary>
+    
+      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
     
     
       <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
