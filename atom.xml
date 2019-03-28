@@ -163,13 +163,13 @@
   </entry>
   
   <entry>
-    <title>equal</title>
+    <title>地址和值</title>
     <link href="https://www.jpan.ink/2018/03/29/Java-equal/"/>
     <id>https://www.jpan.ink/2018/03/29/Java-equal/</id>
     <published>2018-03-29T02:28:40.000Z</published>
-    <updated>2019-03-24T14:55:33.257Z</updated>
+    <updated>2019-03-28T15:26:24.702Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="和-equal"><a href="#和-equal" class="headerlink" title="== 和 equal"></a>== 和 equal</h3><ul><li>== 对比基本数据类型的值和引用对象的内存地址</li><li>equal 判断两个对象是否相等，需要重写equals()方法，否则是判断两个对象是否指向一个对象。</li></ul><h3 id="equal"><a href="#equal" class="headerlink" title="equal"></a>equal</h3><p>Object的equal方法，定义原型如下：</p><pre><code>public boolean equals (Object x){    return this == x;}</code></pre><h3 id="相等与同一"><a href="#相等与同一" class="headerlink" title="相等与同一"></a>相等与同一</h3><p>如果两个对象具有相同的类型以及相同的属性值，则称这两个对象相等。<br>如果两个引用对象指的是同一个对像，则称这两个变量同一。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="和-equal"><a href="#和-equal" class="headerlink" title="== 和 equal"></a>== 和 equal</h3><ul><li>== 对比基本数据类型的值和引用对象的内存地址</li><li>equal 判断两个对象是否相等，需要重写equals()方法，否则是判断两个对象是否指向一个对象。</li></ul><h3 id="equal"><a href="#equal" class="headerlink" title="equal"></a>equal</h3><p>Object的equal方法，定义原型如下：</p><pre><code>public boolean equals (Object x){    return this == x;}</code></pre><h3 id="相等与同一"><a href="#相等与同一" class="headerlink" title="相等与同一"></a>相等与同一</h3><ul><li>如果两个对象具有相同的类型以及相同的属性值，则称这两个对象相等。</li><li>如果两个引用对象指的是同一个对像，则称这两个变量同一。</li></ul><h3 id="深拷贝和浅拷贝"><a href="#深拷贝和浅拷贝" class="headerlink" title="深拷贝和浅拷贝"></a>深拷贝和浅拷贝</h3><ul><li>深拷贝会把引用的内容一起拷贝过来</li></ul><h3 id="String的存储"><a href="#String的存储" class="headerlink" title="String的存储"></a>String的存储</h3><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>. <span class="keyword">String </span><span class="keyword">str1 </span>= <span class="string">"abc"</span><span class="comment">; </span></span><br><span class="line">  System.out.println(<span class="keyword">str1 </span>== <span class="string">"abc"</span>)<span class="comment">; </span></span><br><span class="line"></span><br><span class="line">步骤： </span><br><span class="line"><span class="number">1</span>) 栈中开辟一块空间存放引用<span class="keyword">str1， </span></span><br><span class="line"><span class="number">2</span>) <span class="keyword">String池中开辟一块空间，存放String常量"abc"， </span></span><br><span class="line"><span class="number">3</span>) 引用<span class="keyword">str1指向池中String常量"abc"， </span></span><br><span class="line"><span class="number">4</span>) <span class="keyword">str1所指代的地址即常量"abc"所在地址，输出为true </span></span><br><span class="line"></span><br><span class="line"><span class="number">2</span>. <span class="keyword">String </span><span class="keyword">str2 </span>= new <span class="keyword">String("abc"); </span></span><br><span class="line">  System.out.println(<span class="keyword">str2 </span>== <span class="string">"abc"</span>)<span class="comment">; </span></span><br><span class="line"></span><br><span class="line">步骤： </span><br><span class="line"><span class="number">1</span>) 栈中开辟一块空间存放引用<span class="keyword">str2， </span></span><br><span class="line"><span class="number">2</span>) 堆中开辟一块空间存放一个新建的<span class="keyword">String对象"abc"， </span></span><br><span class="line"><span class="number">3</span>) 引用<span class="keyword">str2指向堆中的新建的String对象"abc"， </span></span><br><span class="line"><span class="number">4</span>) <span class="keyword">str2所指代的对象地址为堆中地址，而常量"abc"地址在池中，输出为false </span></span><br><span class="line"></span><br><span class="line"><span class="number">3</span>. <span class="keyword">String </span><span class="keyword">str3 </span>= new <span class="keyword">String（"abc"); </span></span><br><span class="line">  System.out.println(<span class="keyword">str3 </span>== <span class="keyword">str2); </span></span><br><span class="line"></span><br><span class="line">步骤： </span><br><span class="line"><span class="number">1</span>) 栈中开辟一块空间存放引用<span class="keyword">str3， </span></span><br><span class="line"><span class="number">2</span>) 堆中开辟一块新空间存放另外一个(不同于<span class="keyword">str2所指)新建的String对象， </span></span><br><span class="line"><span class="number">3</span>) 引用<span class="keyword">str3指向另外新建的那个String对象 </span></span><br><span class="line"><span class="number">4</span>) <span class="keyword">str3和str2指向堆中不同的String对象，地址也不相同，输出为false </span></span><br><span class="line"></span><br><span class="line"><span class="number">4</span>. <span class="keyword">String </span><span class="keyword">str4 </span>= <span class="string">"a"</span> + <span class="string">"b"</span><span class="comment">; </span></span><br><span class="line">  System.out.println(<span class="keyword">str4 </span>== <span class="string">"ab"</span>)<span class="comment">; </span></span><br><span class="line"></span><br><span class="line">步骤： </span><br><span class="line"><span class="number">1</span>) 栈中开辟一块空间存放引用<span class="keyword">str4， </span></span><br><span class="line"><span class="number">2</span>) 根据编译器合并已知量的优化功能，池中开辟一块空间，存放合并后的<span class="keyword">String常量"ab"， </span></span><br><span class="line"><span class="number">3</span>) 引用<span class="keyword">str4指向池中常量"ab"， </span></span><br><span class="line"><span class="number">4</span>) <span class="keyword">str4所指即池中常量"ab"，输出为true </span></span><br><span class="line"></span><br><span class="line"><span class="number">5</span>. final <span class="keyword">String </span>s = <span class="string">"a"</span><span class="comment">; </span></span><br><span class="line">  <span class="keyword">String </span><span class="keyword">str5 </span>= s + <span class="string">"b"</span><span class="comment">; </span></span><br><span class="line">  System.out.println(<span class="keyword">str5 </span>== <span class="string">"ab"</span>)<span class="comment">; </span></span><br><span class="line"></span><br><span class="line">步骤： </span><br><span class="line">同<span class="number">4</span> </span><br><span class="line"></span><br><span class="line"><span class="number">6</span>. <span class="keyword">String </span><span class="built_in">s1</span> = <span class="string">"a"</span><span class="comment">; </span></span><br><span class="line">  <span class="keyword">String </span><span class="built_in">s2</span> = <span class="string">"b"</span><span class="comment">; </span></span><br><span class="line">  <span class="keyword">String </span><span class="keyword">str6 </span>= <span class="built_in">s1</span> + <span class="built_in">s2</span><span class="comment">; </span></span><br><span class="line">  System.out.println(<span class="keyword">str6 </span>== <span class="string">"ab"</span>)<span class="comment">; </span></span><br><span class="line"></span><br><span class="line">步骤： </span><br><span class="line"><span class="number">1</span>) 栈中开辟一块中间存放引用<span class="built_in">s1</span>，<span class="built_in">s1</span>指向池中<span class="keyword">String常量"a"， </span></span><br><span class="line"><span class="number">2</span>) 栈中开辟一块中间存放引用<span class="built_in">s2</span>，<span class="built_in">s2</span>指向池中<span class="keyword">String常量"b"， </span></span><br><span class="line"><span class="number">3</span>) 栈中开辟一块中间存放引用<span class="keyword">str5， </span></span><br><span class="line"><span class="number">4</span>) <span class="built_in">s1</span> + <span class="built_in">s2</span>通过<span class="keyword">StringBuilder的最后一步toString()方法还原一个新的String对象"ab"，因此堆中开辟一块空间存放此对象， </span></span><br><span class="line"><span class="number">5</span>) 引用<span class="keyword">str6指向堆中(s1 </span>+ <span class="built_in">s2</span>)所还原的新<span class="keyword">String对象， </span></span><br><span class="line"><span class="number">6</span>) <span class="keyword">str6指向的对象在堆中，而常量"ab"在池中，输出为false </span></span><br><span class="line"></span><br><span class="line"><span class="number">7</span>. <span class="keyword">String </span><span class="keyword">str7 </span>= <span class="string">"abc"</span>.<span class="keyword">substring(0, </span><span class="number">2</span>)<span class="comment">; </span></span><br><span class="line"></span><br><span class="line">步骤： </span><br><span class="line"><span class="number">1</span>) 栈中开辟一块空间存放引用<span class="keyword">str7， </span></span><br><span class="line"><span class="number">2</span>) <span class="keyword">substring()方法还原一个新的String对象"ab"（不同于str6所指），堆中开辟一块空间存放此对象， </span></span><br><span class="line"><span class="number">3</span>) 引用<span class="keyword">str7指向堆中的新String对象， </span></span><br><span class="line"></span><br><span class="line"><span class="number">8</span>. <span class="keyword">String </span><span class="keyword">str8 </span>= <span class="string">"abc"</span>.toUpperCase()<span class="comment">; </span></span><br><span class="line"></span><br><span class="line">步骤： </span><br><span class="line"><span class="number">1</span>) 栈中开辟一块空间存放引用<span class="keyword">str6， </span></span><br><span class="line"><span class="number">2</span>) toUpperCase()方法还原一个新的<span class="keyword">String对象"ABC"，池中并未开辟新的空间存放String常量"ABC"， </span></span><br><span class="line"><span class="number">3</span>) 引用<span class="keyword">str8指向堆中的新String对象</span></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -183,6 +183,8 @@
     </summary>
     
       <category term="Java" scheme="https://www.jpan.ink/categories/Java/"/>
+    
+      <category term="String" scheme="https://www.jpan.ink/categories/String/"/>
     
     
       <category term="Java" scheme="https://www.jpan.ink/tags/Java/"/>
@@ -269,7 +271,7 @@
     <link href="https://www.jpan.ink/2017/03/29/Json-convert-to-list/"/>
     <id>https://www.jpan.ink/2017/03/29/Json-convert-to-list/</id>
     <published>2017-03-29T02:28:40.000Z</published>
-    <updated>2019-03-24T14:47:57.987Z</updated>
+    <updated>2019-03-28T15:28:17.521Z</updated>
     
     <content type="html"><![CDATA[<h3 id="当不通过form-data进行传送数据时"><a href="#当不通过form-data进行传送数据时" class="headerlink" title="当不通过form-data进行传送数据时"></a>当不通过form-data进行传送数据时</h3><h4 id="无法直接传json的list-可以通过转换为String传送"><a href="#无法直接传json的list-可以通过转换为String传送" class="headerlink" title="无法直接传json的list 可以通过转换为String传送"></a>无法直接传json的list 可以通过转换为String传送</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">contentStr = <span class="built_in">JSON</span>.stringify(list),</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Object content = JSONArray.parseArray(contentStr, Object.class)</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -282,9 +284,9 @@
     
     </summary>
     
-      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
-    
       <category term="Json" scheme="https://www.jpan.ink/categories/Json/"/>
+    
+      <category term="JS" scheme="https://www.jpan.ink/categories/JS/"/>
     
     
       <category term="Web" scheme="https://www.jpan.ink/tags/Web/"/>
@@ -314,32 +316,6 @@
   </entry>
   
   <entry>
-    <title>Pickle-数据持久存储</title>
-    <link href="https://www.jpan.ink/2017/02/06/Python-pickle/"/>
-    <id>https://www.jpan.ink/2017/02/06/Python-pickle/</id>
-    <published>2017-02-05T16:00:00.000Z</published>
-    <updated>2019-03-17T15:19:45.464Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="pickle模块"><a href="#pickle模块" class="headerlink" title="pickle模块"></a>pickle模块</h4><ul><li>python的pickle模块实现了基本的数据序列和反序列化。通过pickle模块的序列化操作我们能够将程序中运行的对象信息保存到文件中去，永久存储；通过pickle模块的反序列化操作，我们能够从文件中创建上一次程序保存的对象</li></ul><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">　pickle.dump(obj, <span class="keyword">file</span>, [,protocol])</span><br><span class="line">　　注解：将对象obj保存到文件<span class="keyword">file</span>中去。</span><br><span class="line">　　　　　protocol为序列化使用的协议版本，<span class="number">0</span>：ASCII协议，所序列化的对象使用可打印的ASCII码表示；<span class="number">1</span>：老式的二进制协议；<span class="number">2</span>：<span class="number">2.3</span>版本引入的新二进制协议，较以前的更高效。其中协议<span class="number">0</span>和<span class="number">1</span>兼容老版本的<span class="keyword">python</span>。protocol默认值为<span class="number">0</span>。</span><br><span class="line">　　　　　<span class="keyword">file</span>：对象保存到的类文件对象。<span class="keyword">file</span>必须有<span class="keyword">write</span>()接口， <span class="keyword">file</span>可以是一个以<span class="string">'w'</span>方式打开的文件或者一个StringIO对象或者其他任何实现<span class="keyword">write</span>()接口的对象。如果protocol&gt;=<span class="number">1</span>，文件对象需要是二进制模式打开的。</span><br><span class="line"></span><br><span class="line">　pickle.load(<span class="keyword">file</span>)</span><br><span class="line">　　注解：从<span class="keyword">file</span>中读取一个字符串，并将它重构为原来的<span class="keyword">python</span>对象。</span><br><span class="line">　　<span class="keyword">file</span>:类文件对象，有<span class="keyword">read</span>()和readline()接口。</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;pickle模块&quot;&gt;&lt;a href=&quot;#pickle模块&quot; class=&quot;headerlink&quot; title=&quot;pickle模块&quot;&gt;&lt;/a&gt;pickle模块&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;python的pickle模块实现了基本的数据序列和反序列化。通过pickle模
-      
-    
-    </summary>
-    
-      <category term="Pickle" scheme="https://www.jpan.ink/categories/Pickle/"/>
-    
-    
-      <category term="Python" scheme="https://www.jpan.ink/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>在Python2.7中和编码作战</title>
     <link href="https://www.jpan.ink/2017/02/06/Python-code/"/>
     <id>https://www.jpan.ink/2017/02/06/Python-code/</id>
@@ -359,6 +335,32 @@
     </summary>
     
       <category term="Python" scheme="https://www.jpan.ink/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://www.jpan.ink/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pickle-数据持久存储</title>
+    <link href="https://www.jpan.ink/2017/02/06/Python-pickle/"/>
+    <id>https://www.jpan.ink/2017/02/06/Python-pickle/</id>
+    <published>2017-02-05T16:00:00.000Z</published>
+    <updated>2019-03-17T15:19:45.464Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="pickle模块"><a href="#pickle模块" class="headerlink" title="pickle模块"></a>pickle模块</h4><ul><li>python的pickle模块实现了基本的数据序列和反序列化。通过pickle模块的序列化操作我们能够将程序中运行的对象信息保存到文件中去，永久存储；通过pickle模块的反序列化操作，我们能够从文件中创建上一次程序保存的对象</li></ul><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">　pickle.dump(obj, <span class="keyword">file</span>, [,protocol])</span><br><span class="line">　　注解：将对象obj保存到文件<span class="keyword">file</span>中去。</span><br><span class="line">　　　　　protocol为序列化使用的协议版本，<span class="number">0</span>：ASCII协议，所序列化的对象使用可打印的ASCII码表示；<span class="number">1</span>：老式的二进制协议；<span class="number">2</span>：<span class="number">2.3</span>版本引入的新二进制协议，较以前的更高效。其中协议<span class="number">0</span>和<span class="number">1</span>兼容老版本的<span class="keyword">python</span>。protocol默认值为<span class="number">0</span>。</span><br><span class="line">　　　　　<span class="keyword">file</span>：对象保存到的类文件对象。<span class="keyword">file</span>必须有<span class="keyword">write</span>()接口， <span class="keyword">file</span>可以是一个以<span class="string">'w'</span>方式打开的文件或者一个StringIO对象或者其他任何实现<span class="keyword">write</span>()接口的对象。如果protocol&gt;=<span class="number">1</span>，文件对象需要是二进制模式打开的。</span><br><span class="line"></span><br><span class="line">　pickle.load(<span class="keyword">file</span>)</span><br><span class="line">　　注解：从<span class="keyword">file</span>中读取一个字符串，并将它重构为原来的<span class="keyword">python</span>对象。</span><br><span class="line">　　<span class="keyword">file</span>:类文件对象，有<span class="keyword">read</span>()和readline()接口。</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;pickle模块&quot;&gt;&lt;a href=&quot;#pickle模块&quot; class=&quot;headerlink&quot; title=&quot;pickle模块&quot;&gt;&lt;/a&gt;pickle模块&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;python的pickle模块实现了基本的数据序列和反序列化。通过pickle模
+      
+    
+    </summary>
+    
+      <category term="Pickle" scheme="https://www.jpan.ink/categories/Pickle/"/>
     
     
       <category term="Python" scheme="https://www.jpan.ink/tags/Python/"/>
@@ -391,28 +393,6 @@
   </entry>
   
   <entry>
-    <title>PHP基础语法</title>
-    <link href="https://www.jpan.ink/2016/06/20/PHP-note/"/>
-    <id>https://www.jpan.ink/2016/06/20/PHP-note/</id>
-    <published>2016-06-19T16:00:00.000Z</published>
-    <updated>2019-03-17T15:35:05.881Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="PHP-脚本"><a href="#PHP-脚本" class="headerlink" title="PHP 脚本"></a>PHP 脚本</h4><p>可放置于文档中的任何位置。<br>PHP 脚本以 &lt;?php 开头，以 ?&gt; 结尾：<br><a id="more"></a></p><pre><code>&lt;?php// 此处是 PHP 代码?&gt;</code></pre><p>PHP 文件的默认文件扩展名是 “.php”。</p><p>PHP 文件通常包含 HTML 标签以及一些 PHP 脚本代码。</p><h4 id="PHP-支持三种注释："><a href="#PHP-支持三种注释：" class="headerlink" title="PHP 支持三种注释："></a>PHP 支持三种注释：</h4><pre><code>// 这是单行注释# 这也是单行注释/*这是多行注释块多行*/</code></pre><h4 id="PHP-大小写敏感"><a href="#PHP-大小写敏感" class="headerlink" title="PHP 大小写敏感"></a>PHP 大小写敏感</h4><p>在 PHP 中，所有用户定义的函数、类和关键词（例如 if、else、echo 等等）都对大小写不敏感。</p><p>所有变量都对大小写敏感。</p><h4 id="PHP-变量规则："><a href="#PHP-变量规则：" class="headerlink" title="PHP 变量规则："></a>PHP 变量规则：</h4><p>变量以 $ 符号开头，其后是变量的名称<br>变量名称必须以字母或下划线开头<br>变量名称不能以数字开头<br>变量名称只能包含字母数字字符和下划线（A-z、0-9 以及 _）<br>变量名称对大小写敏感（$y 与 $Y 是两个不同的变量）</p><h4 id="PHP-有三种不同的变量作用域："><a href="#PHP-有三种不同的变量作用域：" class="headerlink" title="PHP 有三种不同的变量作用域："></a>PHP 有三种不同的变量作用域：</h4><p>local（局部）<br>global（全局）<br>static（静态）<br>函数之外声明的变量拥有 Global 作用域，只能在函数以外进行访问。</p><p>函数内部声明的变量拥有 LOCAL 作用域，只能在函数内部进行访问。 通常，当函数完成/执行后，会删除所有变量。</p><h4 id="PHP-global-关键词"><a href="#PHP-global-关键词" class="headerlink" title="PHP global 关键词"></a>PHP global 关键词</h4><p>global 关键词用于在函数内 访问全局变量。<br>要做到这一点，请在（函数内部）变量前面使用 global 关键词：<br>global $x,$y;<br> $GLOBALS[‘y’]=$GLOBALS[‘x’]+$GLOBALS[‘y’];</p><h4 id="PHP-static-关键词"><a href="#PHP-static-关键词" class="headerlink" title="PHP static 关键词"></a>PHP static 关键词</h4><p>首次声明变量时使用 static 关键词，不删除某个局部变量。<br>每当函数被调用时，这个变量所存储的信息都是函数最后一次被调用时所包含的信息。</p><p>注释：该变量仍然是函数的局部变量。</p><h4 id="PHP-echo-和-print-语句"><a href="#PHP-echo-和-print-语句" class="headerlink" title="PHP echo 和 print 语句"></a>PHP echo 和 print 语句</h4><p>echo 和 print 之间的差异：</p><p>echo - 能够输出一个以上的字符串<br>print - 只能输出一个字符串，并始终返回 1</p><p>提示：echo 比 print 稍快，因为它不返回任何值。</p><p>使用方法一致。<br>都是语言结构，有无括号均可使用， 字符串中能包含 HTML 标记</p><pre><code>&lt;?phpecho &quot;&lt;h2&gt;PHP is fun!&lt;/h2&gt;&quot;;echo &quot;Hello world!&lt;br&gt;&quot;;echo &quot;I&apos;m about to learn PHP!&lt;br&gt;&quot;;echo &quot;This&quot;, &quot; string&quot;, &quot; was&quot;, &quot; made&quot;, &quot; with multiple parameters.&quot;;echo $txt1;echo &quot;&lt;br&gt;&quot;;echo &quot;Study PHP at $txt2&quot;;echo &quot;&lt;br&gt;&quot;;echo &quot;My car is a {$cars[0]}&quot;;?&gt;</code></pre><h4 id="PHP-字符串"><a href="#PHP-字符串" class="headerlink" title="PHP 字符串"></a>PHP 字符串</h4><p>字符串可以是引号内的任何文本。可以使用单引号或双引</p><h4 id="PHP-逻辑"><a href="#PHP-逻辑" class="headerlink" title="PHP 逻辑"></a>PHP 逻辑</h4><p>逻辑是 true 或 false。</p><pre><code>$x=true;$y=false;</code></pre><h4 id="yii框架"><a href="#yii框架" class="headerlink" title="yii框架"></a>yii框架</h4><p>has one、many和belongs_to的属性所在表刚好相反<br>belongs_to 当前的多对一<br>has many 1对多</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;PHP-脚本&quot;&gt;&lt;a href=&quot;#PHP-脚本&quot; class=&quot;headerlink&quot; title=&quot;PHP 脚本&quot;&gt;&lt;/a&gt;PHP 脚本&lt;/h4&gt;&lt;p&gt;可放置于文档中的任何位置。&lt;br&gt;PHP 脚本以 &amp;lt;?php 开头，以 ?&amp;gt; 结尾：&lt;br&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="PHP" scheme="https://www.jpan.ink/categories/PHP/"/>
-    
-    
-      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Mysql性能优化</title>
     <link href="https://www.jpan.ink/2016/06/20/Mysql-optimization/"/>
     <id>https://www.jpan.ink/2016/06/20/Mysql-optimization/</id>
@@ -435,11 +415,33 @@
   </entry>
   
   <entry>
+    <title>PHP基础语法</title>
+    <link href="https://www.jpan.ink/2016/06/20/PHP-note/"/>
+    <id>https://www.jpan.ink/2016/06/20/PHP-note/</id>
+    <published>2016-06-19T16:00:00.000Z</published>
+    <updated>2019-03-17T15:35:05.881Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="PHP-脚本"><a href="#PHP-脚本" class="headerlink" title="PHP 脚本"></a>PHP 脚本</h4><p>可放置于文档中的任何位置。<br>PHP 脚本以 &lt;?php 开头，以 ?&gt; 结尾：<br><a id="more"></a></p><pre><code>&lt;?php// 此处是 PHP 代码?&gt;</code></pre><p>PHP 文件的默认文件扩展名是 “.php”。</p><p>PHP 文件通常包含 HTML 标签以及一些 PHP 脚本代码。</p><h4 id="PHP-支持三种注释："><a href="#PHP-支持三种注释：" class="headerlink" title="PHP 支持三种注释："></a>PHP 支持三种注释：</h4><pre><code>// 这是单行注释# 这也是单行注释/*这是多行注释块多行*/</code></pre><h4 id="PHP-大小写敏感"><a href="#PHP-大小写敏感" class="headerlink" title="PHP 大小写敏感"></a>PHP 大小写敏感</h4><p>在 PHP 中，所有用户定义的函数、类和关键词（例如 if、else、echo 等等）都对大小写不敏感。</p><p>所有变量都对大小写敏感。</p><h4 id="PHP-变量规则："><a href="#PHP-变量规则：" class="headerlink" title="PHP 变量规则："></a>PHP 变量规则：</h4><p>变量以 $ 符号开头，其后是变量的名称<br>变量名称必须以字母或下划线开头<br>变量名称不能以数字开头<br>变量名称只能包含字母数字字符和下划线（A-z、0-9 以及 _）<br>变量名称对大小写敏感（$y 与 $Y 是两个不同的变量）</p><h4 id="PHP-有三种不同的变量作用域："><a href="#PHP-有三种不同的变量作用域：" class="headerlink" title="PHP 有三种不同的变量作用域："></a>PHP 有三种不同的变量作用域：</h4><p>local（局部）<br>global（全局）<br>static（静态）<br>函数之外声明的变量拥有 Global 作用域，只能在函数以外进行访问。</p><p>函数内部声明的变量拥有 LOCAL 作用域，只能在函数内部进行访问。 通常，当函数完成/执行后，会删除所有变量。</p><h4 id="PHP-global-关键词"><a href="#PHP-global-关键词" class="headerlink" title="PHP global 关键词"></a>PHP global 关键词</h4><p>global 关键词用于在函数内 访问全局变量。<br>要做到这一点，请在（函数内部）变量前面使用 global 关键词：<br>global $x,$y;<br> $GLOBALS[‘y’]=$GLOBALS[‘x’]+$GLOBALS[‘y’];</p><h4 id="PHP-static-关键词"><a href="#PHP-static-关键词" class="headerlink" title="PHP static 关键词"></a>PHP static 关键词</h4><p>首次声明变量时使用 static 关键词，不删除某个局部变量。<br>每当函数被调用时，这个变量所存储的信息都是函数最后一次被调用时所包含的信息。</p><p>注释：该变量仍然是函数的局部变量。</p><h4 id="PHP-echo-和-print-语句"><a href="#PHP-echo-和-print-语句" class="headerlink" title="PHP echo 和 print 语句"></a>PHP echo 和 print 语句</h4><p>echo 和 print 之间的差异：</p><p>echo - 能够输出一个以上的字符串<br>print - 只能输出一个字符串，并始终返回 1</p><p>提示：echo 比 print 稍快，因为它不返回任何值。</p><p>使用方法一致。<br>都是语言结构，有无括号均可使用， 字符串中能包含 HTML 标记</p><pre><code>&lt;?phpecho &quot;&lt;h2&gt;PHP is fun!&lt;/h2&gt;&quot;;echo &quot;Hello world!&lt;br&gt;&quot;;echo &quot;I&apos;m about to learn PHP!&lt;br&gt;&quot;;echo &quot;This&quot;, &quot; string&quot;, &quot; was&quot;, &quot; made&quot;, &quot; with multiple parameters.&quot;;echo $txt1;echo &quot;&lt;br&gt;&quot;;echo &quot;Study PHP at $txt2&quot;;echo &quot;&lt;br&gt;&quot;;echo &quot;My car is a {$cars[0]}&quot;;?&gt;</code></pre><h4 id="PHP-字符串"><a href="#PHP-字符串" class="headerlink" title="PHP 字符串"></a>PHP 字符串</h4><p>字符串可以是引号内的任何文本。可以使用单引号或双引</p><h4 id="PHP-逻辑"><a href="#PHP-逻辑" class="headerlink" title="PHP 逻辑"></a>PHP 逻辑</h4><p>逻辑是 true 或 false。</p><pre><code>$x=true;$y=false;</code></pre><h4 id="yii框架"><a href="#yii框架" class="headerlink" title="yii框架"></a>yii框架</h4><p>has one、many和belongs_to的属性所在表刚好相反<br>belongs_to 当前的多对一<br>has many 1对多</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;PHP-脚本&quot;&gt;&lt;a href=&quot;#PHP-脚本&quot; class=&quot;headerlink&quot; title=&quot;PHP 脚本&quot;&gt;&lt;/a&gt;PHP 脚本&lt;/h4&gt;&lt;p&gt;可放置于文档中的任何位置。&lt;br&gt;PHP 脚本以 &amp;lt;?php 开头，以 ?&amp;gt; 结尾：&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="PHP" scheme="https://www.jpan.ink/categories/PHP/"/>
+    
+    
+      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Js传递多值</title>
     <link href="https://www.jpan.ink/2016/05/11/Js-dup-param/"/>
     <id>https://www.jpan.ink/2016/05/11/Js-dup-param/</id>
     <published>2016-05-10T16:00:00.000Z</published>
-    <updated>2019-03-17T14:35:55.102Z</updated>
+    <updated>2019-03-28T15:27:24.379Z</updated>
     
     <content type="html"><![CDATA[<p>onclick=”test_click(‘+ a +’,\’’+ b +’\’)”<br>注意单双引号的嵌套，转义字符的使用</p><p>detail(‘${type.id}’,’ ${type.name}’)”</p><p>.html()用为读取和修改元素的HTML标签</p><p>.text()用来读取或修改元素的纯文本内容 dev或者a或者label</p><p>.val()用来读取或修改表单元素的value值。只可用于input</p>]]></content>
     
@@ -454,32 +456,10 @@
     
     </summary>
     
-      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
+      <category term="JS" scheme="https://www.jpan.ink/categories/JS/"/>
     
     
       <category term="Web" scheme="https://www.jpan.ink/tags/Web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Js基础语法</title>
-    <link href="https://www.jpan.ink/2016/04/22/Js-note/"/>
-    <id>https://www.jpan.ink/2016/04/22/Js-note/</id>
-    <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2019-03-17T14:28:18.496Z</updated>
-    
-    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>大小写区分</p></li><li><p>忽略空格</p></li><li><p>单引号和双引号作用一致</p></li><li><p>；可加可不加</p></li><li><p>var carname=”Volvo”; var carname;值不变</p></li><li><p>var cars = new Array（）；</p></li><li><p>cars[0]=“”</p></li><li><p>数组下标从0开始</p></li><li><p>对象定义与寻址</p></li><li><p>字符串对象（所有事务都是对象）</p></li><li><p>txt.length=5</p></li><li><p>txt.indexOf()</p></li><li><p>txt.replace()</p></li><li><p>txt.search()</p></li><li><p>alert（““） 弹窗提示</p></li><li><p>函数外申明的变量是全局变量，网页上所有脚本和函数都可以访问它。可以</p></li><li><p>输出</p></li><li><p>document.getElementById(“demo”).innerHTML=”My First JavaScript”;+ document.write(“</p><p>My First JavaScript</p>“); <p></p></li><li><p>字符串变量+ 表示连接</p></li></ul><ul><li><p>数字和字符串相加得到字符串</p></li><li><p>=== 全等</p></li><li><p>In</p></li><li><p>var person={fname:”John”,lname:”Doe”,age:25};</p></li><li></li><li>for (x in person)</li><li>{</li><li>txt=txt + person[x];</li><li>}</li></ul><p>Js验证<br><a href="http://www.w3school.com.cn/js/js_form_validation.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/js/js_form_validation.asp</a></p>]]></content>
-    
-    <summary type="html">
-    
-      notes
-    
-    </summary>
-    
-      <category term="Js" scheme="https://www.jpan.ink/categories/Js/"/>
-    
-    
-      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
     
   </entry>
   
@@ -488,7 +468,7 @@
     <link href="https://www.jpan.ink/2016/04/22/Jq-note/"/>
     <id>https://www.jpan.ink/2016/04/22/Jq-note/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2019-03-17T14:26:09.149Z</updated>
+    <updated>2019-03-28T15:27:17.002Z</updated>
     
     <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>jQuery 为HTML元素服务</p></li><li><p>语法是Xpath和CSS选择器语法结合</p><pre><code>$(this).hide()   this ：html元素\#text   id=test   this#text.test   class=test   this.class$(selector).action()$(document).ready(function(){    })</code></pre></li><li><p>括号内  选择器要加双引号</p></li><li><p>使用XPath表达式选择带有给定属性的元素</p></li></ul><pre><code>$(“[href]”)$(“[href  =’    ’]”)    完全匹配$(“[href  !=’    ‘]”)$(“[href$ =’.jpg’]”)      以。。。结尾$(“ul li:first”)$(“div#intro.head”)</code></pre><ul><li><p>JQuery 为事件处理特别设计的</p></li><li><p>通常放到<head>部分</head></p></li><li><p>多页面，希望jq易于维护，放到js文件里面</p><pre><code>&lt;head&gt;&lt;script type=”text/javascript” src=“XXXX.js” &gt;&lt;/script&gt;&lt;/head&gt;</code></pre></li><li><p>Jq $冲突</p><pre><code>Var jq =jQuery.noConflict();$.noConflict();  默认用jQuery代替$</code></pre></li><li><p>jQuery事件</p><pre><code>$(document).ready(  )$(selector).click(  )$(selector).dblclick(   )$(selector).focus(  )$(selector).mouseover()</code></pre></li></ul><h3 id="jQuery-效果"><a href="#jQuery-效果" class="headerlink" title="jQuery 效果"></a>jQuery 效果</h3><p>默认校验规则</p><p>(1)required:true 必输字段</p><p>(2)remote:”check.php” 使用ajax方法调用check.php验证输入值</p><p>(3)email:true 必须输入正确格式的电子邮件</p><p>(4)url:true 必须输入正确格式的网址</p><p>(5)date:true 必须输入正确格式的日期</p><p>(6)dateISO:true 必须输入正确格式的日期(ISO)，例如：2009-06-23，1998/01/22 只验证格式，不验证有效性</p><p>(7)number:true 必须输入合法的数字(负数，小数)</p><p>(8)digits:true 必须输入整数</p><p>(9)creditcard: 必须输入合法的信用卡号</p><p>(10)equalTo:”#field” 输入值必须和#field相同</p><p>(11)accept: 输入拥有合法后缀名的字符串（上传文件的后缀）</p><p>(12)maxlength:5 输入长度最多是5的字符串(汉字算一个字符)</p><p>(13)minlength:10 输入长度最小是10的字符串(汉字算一个字符)</p><p>(14)rangelength:[5,10] 输入长度必须介于 5 和 10 之间的字符串”)(汉字算一个字符)</p><p>(15)range:[5,10] 输入值必须介于 5 和 10 之间</p><p>(16)max:5 输入值不能大于5</p><p>(17)min:10 输入值不能小于10</p>]]></content>
     
@@ -498,7 +478,29 @@
     
     </summary>
     
-      <category term="Jq" scheme="https://www.jpan.ink/categories/Jq/"/>
+      <category term="Jquery" scheme="https://www.jpan.ink/categories/Jquery/"/>
+    
+    
+      <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Js基础语法</title>
+    <link href="https://www.jpan.ink/2016/04/22/Js-note/"/>
+    <id>https://www.jpan.ink/2016/04/22/Js-note/</id>
+    <published>2016-04-21T16:00:00.000Z</published>
+    <updated>2019-03-28T15:27:31.128Z</updated>
+    
+    <content type="html"><![CDATA[<p>w3c网站学习笔记</p><ul><li><p>大小写区分</p></li><li><p>忽略空格</p></li><li><p>单引号和双引号作用一致</p></li><li><p>；可加可不加</p></li><li><p>var carname=”Volvo”; var carname;值不变</p></li><li><p>var cars = new Array（）；</p></li><li><p>cars[0]=“”</p></li><li><p>数组下标从0开始</p></li><li><p>对象定义与寻址</p></li><li><p>字符串对象（所有事务都是对象）</p></li><li><p>txt.length=5</p></li><li><p>txt.indexOf()</p></li><li><p>txt.replace()</p></li><li><p>txt.search()</p></li><li><p>alert（““） 弹窗提示</p></li><li><p>函数外申明的变量是全局变量，网页上所有脚本和函数都可以访问它。可以</p></li><li><p>输出</p></li><li><p>document.getElementById(“demo”).innerHTML=”My First JavaScript”;+ document.write(“</p><p>My First JavaScript</p>“); <p></p></li><li><p>字符串变量+ 表示连接</p></li></ul><ul><li><p>数字和字符串相加得到字符串</p></li><li><p>=== 全等</p></li><li><p>In</p></li><li><p>var person={fname:”John”,lname:”Doe”,age:25};</p></li><li></li><li>for (x in person)</li><li>{</li><li>txt=txt + person[x];</li><li>}</li></ul><p>Js验证<br><a href="http://www.w3school.com.cn/js/js_form_validation.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/js/js_form_validation.asp</a></p>]]></content>
+    
+    <summary type="html">
+    
+      notes
+    
+    </summary>
+    
+      <category term="JS" scheme="https://www.jpan.ink/categories/JS/"/>
     
     
       <category term="Base-notes" scheme="https://www.jpan.ink/tags/Base-notes/"/>
